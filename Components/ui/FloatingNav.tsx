@@ -42,6 +42,20 @@ export const FloatingNav = ({
     }
   });
 
+  const handleScroll = (link: string) => {
+    if (typeof window !== "undefined") {
+      const section = document.querySelector(link);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const offset = 100;
+        window.scrollTo({
+          top: rect.top + window.pageYOffset - offset,
+          behavior: "smooth"
+        });
+      }
+    }
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -70,15 +84,7 @@ export const FloatingNav = ({
             )}
             onClick={(e) => {
               e.preventDefault();
-              const section = document.querySelector(navItem.link);
-              if (section) {
-                const rect = section.getBoundingClientRect();
-                const offset = 100;
-                window.scrollTo({
-                  top: rect.top + window.pageYOffset - offset,
-                  behavior: "smooth"
-                });
-              }
+              handleScroll(navItem.link);
             }}
           >
             {navItem.icon && <span className="block sm:hidden">{navItem.icon}</span>}
