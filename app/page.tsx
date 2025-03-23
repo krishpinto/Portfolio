@@ -8,16 +8,34 @@ import { SkillsSection } from "@/Components/SkillsSection";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 
+const navItems = [
+  { name: "Home", link: "#home", icon: <FaHome /> },
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Skills", link: "#skills" },
+  { name: "Contact", link: "#footer" }
+];
+
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-      <Navbar />
-      <Hero />
-      <section id="about"><Grid /></section>
-      <section id="projects"><RecentProjects /></section>
-      <section id="skills"><SkillsSection /></section>
-      <section id="footer"><Footer /></section>
+        <FloatingNav navItems={navItems} />
+        <section id="home" className="pt-20">
+          <Hero />
+        </section>
+        <section id="about" className="pt-20">
+          <Grid />
+        </section>
+        <section id="projects" className="pt-20">
+          <RecentProjects />
+        </section>
+        <section id="skills" className="pt-20">
+          <SkillsSection />
+        </section>
+        <section id="footer" className="pt-20">
+          <Footer />
+        </section>
       </div>
     </main>
   );

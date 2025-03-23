@@ -1,9 +1,9 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -14,13 +14,16 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+          <Link
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
             key={item.id}
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] hover:cursor-pointer block"
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.link}
+              href={item.link}
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
@@ -50,9 +53,9 @@ const RecentProjects = () => {
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center justify-center mt-7 mb-3">
                 <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
+                  {(item.id === 1 ? item.iconLists : projects[0].iconLists).map((icon, index) => (
                     <div
                       key={index}
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
@@ -73,7 +76,7 @@ const RecentProjects = () => {
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
