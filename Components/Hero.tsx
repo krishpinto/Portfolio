@@ -50,7 +50,7 @@ const Hero = () => {
             Krish Pinto
           </h1>
           <TextGenerateEffect
-            words="I'm a second-year Computer Science Engineering student passionate about Full Stack development and Software engineering"
+            words="I'm a second-year Computer Science Engineering student passionate about Full Stack development and Software engineering."
             className="text-center md:tracking-wider mb-5 text-sm md:text-lg lg:text-2xl"
           />
 

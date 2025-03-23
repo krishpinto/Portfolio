@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, JSX } from "react";
+import React, { useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -7,12 +7,11 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 interface NavItem {
   name: string;
   link: string;
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
 }
 
 export const FloatingNav = ({
@@ -29,7 +28,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       const previous = scrollYProgress.getPrevious() || 0;
-      let direction = current - previous;
+      const direction = current - previous;
 
       if (current < 0.05) {
         setVisible(true);
@@ -74,7 +73,7 @@ export const FloatingNav = ({
               const section = document.querySelector(navItem.link);
               if (section) {
                 const rect = section.getBoundingClientRect();
-                const offset = 100; // Adjust this value based on your needs
+                const offset = 100;
                 window.scrollTo({
                   top: rect.top + window.pageYOffset - offset,
                   behavior: "smooth"

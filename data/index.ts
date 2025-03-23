@@ -189,17 +189,20 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/krishpinto"
+    link: "https://github.com/krishpinto",
+    alt: "GitHub Profile"
   },
   {
     id: 2,
     img: "/twit.svg",
-    link: "https://x.com/krishpint0"
+    link: "https://x.com/krishpint0",
+    alt: "X Profile"
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/krish-pinto-982ab41ba"
+    link: "https://www.linkedin.com/in/krish-pinto-85a241288/",
+    alt: "LinkedIn Profile"
   }
 ] as const;
 

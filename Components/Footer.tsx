@@ -1,58 +1,60 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
+import Image from "next/image";
 import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-50 "
+          width={1920}
+          height={1080}
+          className="w-full h-full opacity-50"
         />
       </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="https://www.linkedin.com/in/krish-pinto-982ab41ba" target="_blank" rel="noopener noreferrer">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright 2024 Krish Pinto
-        </p>
+      <div className="relative">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-white mb-8">
+              Get in Touch
+            </h2>
+            <div className="flex justify-center gap-8 mb-12">
+              <div className="flex flex-col items-center gap-2">
+                <FaLocationArrow className="text-4xl text-white" />
+                <p className="text-white/80">Mumbai, India</p>
+              </div>
+            </div>
 
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <a
-              key={info.id}
-              href={info.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:scale-110 transition-transform"
-            >
-              <img src={info.img} alt="icons" width={24} height={24} />
-            </a>
-          ))}
+            <div className="flex justify-center gap-8 mb-12">
+              {socialMedia.map((info) => (
+                <a
+                  key={info.id}
+                  href={info.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:scale-110 transition-transform"
+                >
+                  <Image
+                    src={info.img}
+                    alt={info.alt}
+                    width={24}
+                    height={24}
+                    className="cursor-pointer hover:opacity-70 transition-opacity"
+                  />
+                </a>
+              ))}
+            </div>
+
+            <div className="text-center text-white/80 text-sm">
+              <p> 2024 Krish Pinto. All rights reserved.</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   );
 };
-
-export default Footer;

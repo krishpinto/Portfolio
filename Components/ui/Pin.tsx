@@ -7,13 +7,11 @@ import { cn } from "@/lib/utils";
 export const PinContainer = ({
   children,
   title,
-  href,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
   title?: string;
-  href?: string;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -54,20 +52,17 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
+      <PinPerspective title={title} />
     </div>
   );
 };
 
 export const PinPerspective = ({
   title,
-  href,
 }: {
   title?: string;
-  href?: string;
 }) => {
   return (
-    // change w-96 to w-full
     <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
         <div className="absolute top-0 inset-x-0  flex justify-center">
