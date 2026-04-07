@@ -2,20 +2,18 @@ import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/base/ui/button"
-import { PostItem } from "@/features/blog/components/post-item"
-import { getAllDocs } from "@/features/doc/data/documents"
 
 import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "./panel"
 
 export function Blog() {
-  const allPosts = getAllDocs()
+  const dummyPosts = [1, 2]
 
   return (
     <Panel id="blog">
       <PanelHeader>
         <PanelTitle>
           Blog
-          <PanelTitleSup>({allPosts.length})</PanelTitleSup>
+          <PanelTitleSup>({dummyPosts.length})</PanelTitleSup>
         </PanelTitle>
       </PanelHeader>
 
@@ -26,8 +24,10 @@ export function Blog() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {allPosts.slice(0, 4).map((post) => (
-            <PostItem key={post.slug} post={post} />
+          {dummyPosts.map((post) => (
+            <div key={post} className="flex h-24 items-center justify-center rounded-xl border border-dashed border-line text-sm text-muted-foreground">
+              Dummy Post Item
+            </div>
           ))}
         </div>
       </div>
@@ -37,7 +37,7 @@ export function Blog() {
           className="gap-2 border-none pr-2.5 pl-3"
           size="sm"
           nativeButton={false}
-          render={<Link href="/blog" />}
+          render={<Link href="/" />}
         >
           All Posts
           <ArrowRightIcon />

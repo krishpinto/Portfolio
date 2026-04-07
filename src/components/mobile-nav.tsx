@@ -11,7 +11,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { haptic } from "@/registry/lib/haptic"
+const haptic = () => {}
 import type { NavItem } from "@/types/nav"
 
 export function MobileNav({ items }: { items: NavItem[] }) {

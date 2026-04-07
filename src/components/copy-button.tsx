@@ -1,38 +1,39 @@
 "use client"
 
-import { useWebHaptics } from "web-haptics/react"
+import * as React from "react"
+import { CheckIcon, CopyIcon } from "lucide-react"
 
-import type { Event } from "@/lib/events"
-import { trackEvent } from "@/lib/events"
-import type { CopyButtonProps } from "@/registry/components/copy-button"
-import { CopyButton as CopyButtonPrimitive } from "@/registry/components/copy-button"
+import { Button } from "@/components/base/ui/button"
+
+export type CopyButtonProps = React.ComponentProps<typeof Button> & {
+  text?: string
+  onCopySuccess?: (text: string) => void
+  onCopyError?: (err: unknown) => void
+}
 
 export function CopyButton({
-  size = "icon-sm",
-  event,
+  text,
+  onCopySuccess,
+  onCopyError,
   ...props
-}: CopyButtonProps & {
-  event?: Event["name"]
-}) {
-  const { trigger } = useWebHaptics({ debug: true })
+}: CopyButtonProps) {
+  const [copied, setCopied] = React.useState(false)
+
+  const handleCopy = async () => {
+    if (!text) return
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      onCopySuccess?.(text)
+      setTimeout(() => setCopied(false), 2000)
+    } catch (e) {
+      onCopyError?.(e)
+    }
+  }
 
   return (
-    <CopyButtonPrimitive
-      variant="secondary"
-      size={size}
-      onCopySuccess={(copiedValue) => {
-        trigger("success")
-        if (event) {
-          trackEvent({
-            name: event,
-            properties: {
-              code: copiedValue,
-            },
-          })
-        }
-      }}
-      onCopyError={() => trigger("error")}
-      {...props}
-    />
+    <Button onClick={handleCopy} {...props}>
+      {copied ? <CheckIcon /> : <CopyIcon />}
+    </Button>
   )
 }

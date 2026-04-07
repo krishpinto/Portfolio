@@ -1,27 +1,19 @@
 import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
 
-import {
-  ComponentItem,
-  ComponentItemDot,
-  ComponentItemIcon,
-  ComponentItemTitle,
-} from "@/app/(app)/(docs)/components/components/component-item"
 import { Button } from "@/components/base/ui/button"
-import { ComponentIcon } from "@/components/icons"
-import { getDocsByCategory } from "@/features/doc/data/documents"
 
 import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "./panel"
 
 export function Components() {
-  const components = getDocsByCategory("components")
+  const dummyComponents = [1, 2, 3, 4, 5, 6]
 
   return (
     <Panel id="components">
       <PanelHeader>
         <PanelTitle>
           Components
-          <PanelTitleSup>({components.length})</PanelTitleSup>
+          <PanelTitleSup>({dummyComponents.length})</PanelTitleSup>
         </PanelTitle>
       </PanelHeader>
 
@@ -33,20 +25,10 @@ export function Components() {
         </div>
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-          {components.slice(0, 9).map((c) => (
-            <ComponentItem key={c.slug} href={`/components/${c.slug}`}>
-              <ComponentItemIcon>
-                <ComponentIcon variant={c.slug} />
-                {(c.metadata.new || c.metadata.updated) && (
-                  <ComponentItemDot
-                    aria-label={c.metadata.new ? "New" : "Updated"}
-                  />
-                )}
-              </ComponentItemIcon>
-              <ComponentItemTitle as="h3">
-                {c.metadata.title}
-              </ComponentItemTitle>
-            </ComponentItem>
+          {dummyComponents.map((c) => (
+            <div key={c} className="flex h-16 items-center justify-center rounded-xl bg-muted/30 border border-dashed border-line text-sm text-muted-foreground hover:bg-muted/50 transition-colors">
+              Dummy Component UI
+            </div>
           ))}
         </div>
       </div>
@@ -56,7 +38,7 @@ export function Components() {
           className="gap-2 border-none pr-2.5 pl-3"
           size="sm"
           nativeButton={false}
-          render={<Link href="/components" />}
+          render={<Link href="/" />}
         >
           All Components
           <ArrowRightIcon />

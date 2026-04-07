@@ -7,7 +7,7 @@ import { useWebHaptics } from "web-haptics/react"
 
 import { useIsClient } from "@/hooks/use-is-client"
 import { trackEvent } from "@/lib/events"
-import { CopyButton } from "@/registry/components/copy-button"
+import { CopyButton } from "@/components/copy-button"
 import { copyToClipboardWithEvent } from "@/utils/copy"
 import { decodePhoneNumber, formatPhoneNumber } from "@/utils/string"
 

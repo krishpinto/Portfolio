@@ -14,24 +14,7 @@ export const META_THEME_COLORS = {
   dark: "#09090b",
 }
 
-export const MAIN_NAV: NavItem[] = [
-  {
-    title: "Components",
-    href: "/components",
-  },
-  {
-    title: "Blocks",
-    href: "/blocks",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
-    title: "Sponsors",
-    href: "/sponsors",
-  },
-]
+export const MAIN_NAV: NavItem[] = []
 
 export const MOBILE_NAV: NavItem[] = [
   {
