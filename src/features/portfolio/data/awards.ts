@@ -11,29 +11,19 @@ export const AWARDS: Award[] = [
       "- 1700+ participants\n- Project: Sentinel — On-Device Android Scam Detection System",
   },
   {
-    id: "30hard-1st",
+    id: "innovex-1st",
     prize: "1st Place",
-    title: "30 Hard Academy Hackathon",
-    date: "2025-02",
+    title: "Innovex Hackathon @ FCRIT E-Summit",
+    date: "2025-03",
     grade: "University",
-    description:
-      "- 1600+ participants\n- Project: Sentinel — On-Device Android Scam Detection System",
+    description: "- Hackathon competition at FCRIT's annual E-Summit\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
   },
   {
-    id: "sparkathon-winner",
-    prize: "Ideathon Winner",
-    title: "Sparkathon, Innovex",
+    id: "sparkathon-2nd",
+    prize: "2nd Place",
+    title: "Spark-A-Thon Hackathon @ FCRIT",
     date: "2024-10",
     grade: "University",
-    description: "- Won the Sparkathon Ideathon at Innovex.",
-  },
-  {
-    id: "ai-clinical-poster",
-    prize: "1st Place",
-    title: "AI-Assisted Clinical Reasoning — Poster Competition, Delhi",
-    date: "2024-11",
-    grade: "University",
-    description:
-      "- Co-authored research paper on AI-assisted clinical reasoning.\n- Won 1st Place at the national poster competition in Delhi.",
+    description: "- Open Innovation domain Hackathon\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
   },
 ]

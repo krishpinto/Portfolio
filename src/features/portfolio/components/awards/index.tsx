@@ -6,9 +6,7 @@ import { AWARDS } from "../../data/awards"
 import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "../panel"
 import { AwardItem } from "./award-item"
 
-const SORTED_AWARDS = [...AWARDS].sort((a, b) => {
-  return compareDesc(new Date(a.date), new Date(b.date))
-})
+const SORTED_AWARDS = [...AWARDS]
 
 export function Awards() {
   return (
