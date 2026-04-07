@@ -13,4 +13,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
     subtitle: "krish-pinto",
     href: "https://linkedin.com/in/krish-pinto",
   },
+  {
+    icon: "https://assets.chanhdai.com/images/link-icons/x.webp?v=2",
+    title: "X",
+    subtitle: "@krishpint0",
+    href: "https://x.com/krishpint0",
+  },
+  {
+    icon: "https://assets.chanhdai.com/images/link-icons/discord.webp?v=2",
+    title: "Discord",
+    subtitle: "921027092102152192",
+    href: "https://discord.com/users/921027092102152192",
+  },
 ]
