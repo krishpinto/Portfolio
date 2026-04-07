@@ -1,0 +1,66 @@
+[
+  {
+    "name": "login-01",
+    "description": "A simple login form.",
+    "categories": [
+      "application",
+      "login"
+    ]
+  },
+  {
+    "name": "hero-01",
+    "description": "A hero section with a golden spiral background.",
+    "categories": [
+      "marketing",
+      "hero"
+    ]
+  },
+  {
+    "name": "blog-01",
+    "description": "A blog section with a grid layout.",
+    "categories": [
+      "content",
+      "blog"
+    ]
+  },
+  {
+    "name": "blog-02",
+    "description": "A blog section with a lined grid layout.",
+    "categories": [
+      "content",
+      "blog"
+    ]
+  },
+  {
+    "name": "testimonials-01",
+    "description": "A testimonials section with dual marquees.",
+    "categories": [
+      "marketing",
+      "testimonials"
+    ]
+  },
+  {
+    "name": "testimonials-02",
+    "description": "A testimonials section with a lined layout.",
+    "categories": [
+      "marketing",
+      "testimonials"
+    ]
+  },
+  {
+    "name": "experience-01",
+    "description": "A work experience section with a lined layout.",
+    "categories": [
+      "content",
+      "portfolio"
+    ]
+  },
+  {
+    "name": "team-01",
+    "description": "A team section with glowing cards.",
+    "categories": [
+      "content",
+      "team"
+    ]
+  }
+]
