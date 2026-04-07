@@ -36,11 +36,11 @@ export const USER: User = {
 - **Full-Stack & AI Engineer** with hands-on experience building enterprise platforms, on-device ML systems, and cloud-native infrastructure.
 - Skilled in **React**, **Next.js**, **TypeScript**, **Python**, **Go**, and modern full-stack & AI/ML technologies; building high-quality, production-grade applications.
 - Passionate about low-level systems, edge inference, and developer tooling — turning ambitious ideas into polished, working products.
-- Creator of [Sentinel](https://github.com/krishpinto/Sentinel): on-device Android scam detection system with sub-200ms ML inference latency
-  - 1st Place @ Hack4Innovation VesIT (1700+ participants)
-  - 1st Place @ 30 Hard Academy Hackathon (1600+ participants)
-- Building [Artemis](https://github.com/krishpinto): self-hosted Kubernetes infrastructure operator — a self-hosted alternative to Railway
-- Vice Chairperson — AIDL Club, FCRIT | Co-organized HackQuinox 2.0 (800+ participants)
+- Creator of [Sentinel](https://github.com/krishpinto/Sentinel): on-device Android scam detection system with sub-200ms ML inference latency, no cloud dependency
+  - 1st Place — Hack4Innovation @ VesIT (1700+ participants)*
+- Vice Chairperson — AIDL Club, FCRIT | Co-organized [HackQuinox 2.0](https://github.com/krishpinto) (800+ participants, mentored 300+ students)
+
+<p class="text-muted-foreground">* Peak metrics recorded; actual current figures may vary.</p>
 `,
   avatar: "/krish.png",
   ogImage: "https://krishpinto.co.in/og.png",
