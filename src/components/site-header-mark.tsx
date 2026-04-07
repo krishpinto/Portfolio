@@ -49,7 +49,7 @@ function KrishPintoMarkMotion() {
         "before:transition-opacity before:duration-500"
       )}
     >
-      <KrishPintoMark className="-translate-y-1 opacity-0 transition-[opacity,translate] duration-300 group-data-[visible=true]/mark-motion:translate-y-0 group-data-[visible=true]/mark-motion:opacity-100" />
+      <KrishPintoMark className="h-8 w-16 -translate-y-1 opacity-0 transition-[opacity,translate] duration-300 group-data-[visible=true]/mark-motion:translate-y-0 group-data-[visible=true]/mark-motion:opacity-100" />
     </div>
   )
 }
