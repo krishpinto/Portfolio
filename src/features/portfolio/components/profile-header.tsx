@@ -1,8 +1,42 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
 import { USER } from "@/features/portfolio/data/user"
 
 import { AvatarElectricEffect } from "./avatar-electric-effect"
 import { PronounceMyName } from "./pronounce-my-name"
 import { VerifiedIcon } from "./verified-icon"
+
+function FlipText({ sentences }: { sentences: string[] }) {
+  const [index, setIndex] = useState(0)
+  const [visible, setVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // fade out
+      setVisible(false)
+      setTimeout(() => {
+        setIndex((i) => (i + 1) % sentences.length)
+        setVisible(true)
+      }, 300)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [sentences.length])
+
+  return (
+    <span
+      style={{
+        display: "inline-block",
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(-6px)",
+        transition: "opacity 0.3s ease, transform 0.3s ease",
+      }}
+    >
+      {sentences[index]}
+    </span>
+  )
+}
 
 export function ProfileHeader() {
   return (
@@ -11,7 +45,7 @@ export function ProfileHeader() {
         <div className="mx-0.5 my-0.75">
           <AvatarElectricEffect>
             <img
-              className="size-30 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
+              className="size-30 rounded-full object-cover object-top ring-1 ring-border ring-offset-2 ring-offset-background select-none sm:size-40"
               alt="Avatar"
               src={USER.avatar}
               fetchPriority="high"
@@ -51,10 +85,10 @@ export function ProfileHeader() {
             )}
           </div>
 
-          <div className="h-12.5 border-t border-line py-1 pl-4 sm:h-9">
-            <div className="font-pixel-square text-sm text-balance text-muted-foreground pt-2">
-              {USER.flipSentences[0]}
-            </div>
+          <div className="h-12.5 border-t border-line py-1 pl-4 sm:h-9 overflow-hidden flex items-center">
+            <p className="font-pixel-square text-sm text-balance text-muted-foreground">
+              <FlipText sentences={USER.flipSentences} />
+            </p>
           </div>
         </div>
       </div>

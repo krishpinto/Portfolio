@@ -9,10 +9,9 @@ export const USER: User = {
   pronouns: "he/him",
   bio: "Full-Stack & AI Engineer. Building things that matter.",
   flipSentences: [
-    "Full-Stack & AI Engineer.",
-    "Building things that matter.",
-    "FPGA • ML • Distributed Systems",
-    "1st Place @ Hack4Innovation 🏆",
+    "Ships fast. Breaks things. Fixes them faster.",
+    "AI does the work. I take the credit.",
+    "Turns coffee and context windows into products.",
   ],
   address: "Mumbai, Maharashtra, India",
   phoneNumber: "KzkzMjQ4MTA4ODA=", // +91 9324810880 in E.164, base64 encoded
@@ -43,7 +42,7 @@ export const USER: User = {
 - Building [Artemis](https://github.com/krishpinto): self-hosted Kubernetes infrastructure operator — a self-hosted alternative to Railway
 - Vice Chairperson — AIDL Club, FCRIT | Co-organized HackQuinox 2.0 (800+ participants)
 `,
-  avatar: "https://avatars.githubusercontent.com/u/krishpinto",
+  avatar: "/krish.png",
   ogImage: "https://krishpinto.co.in/og.png",
   namePronunciationUrl: undefined,
   timeZone: "Asia/Kolkata",
