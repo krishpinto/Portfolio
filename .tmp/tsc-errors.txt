@@ -1,0 +1,19 @@
+﻿src/app/(llms)/doc.mdx/[slug]/route.ts(3,28): error TS2307: Cannot find module '@/features/doc/data/documents' or its corresponding type declarations.
+src/app/(llms)/doc.mdx/[slug]/route.ts(4,28): error TS2307: Cannot find module '@/features/doc/lib/get-llm-text' or its corresponding type declarations.
+src/app/(llms)/doc.mdx/[slug]/route.ts(13,20): error TS7006: Parameter 'doc' implicitly has an 'any' type.
+src/app/(llms)/doc.mdx/[slug]/route.ts(25,30): error TS7006: Parameter 'doc' implicitly has an 'any' type.
+src/app/(preview)/components/block-viewer.tsx(81,43): error TS2307: Cannot find module '@/registry/components/copy-button' or its corresponding type declarations.
+src/app/sitemap.ts(4,47): error TS2307: Cannot find module '@/features/doc/data/documents' or its corresponding type declarations.
+src/app/sitemap.ts(7,35): error TS7006: Parameter 'post' implicitly has an 'any' type.
+src/app/sitemap.ts(12,59): error TS7006: Parameter 'post' implicitly has an 'any' type.
+src/components/code-block-command.tsx(87,9): error TS2322: Type '{ className: string; size: "icon-xs"; text: string; event: string; }' is not assignable to type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string> & { ...; }'.
+  Property 'event' does not exist on type 'IntrinsicAttributes & ButtonProps & VariantProps<(props?: (ConfigVariants<{ variant: { default: string; outline: string; secondary: string; ghost: string; destructive: string; link: string; }; size: { ...; }; }> & ClassProp) | undefined) => string> & { ...; }'.
+src/components/collapsible-animated.tsx(14,8): error TS2307: Cannot find module '@/registry/components/chevrons-up-down-icon' or its corresponding type declarations.
+src/components/collapsible-animated.tsx(15,36): error TS2307: Cannot find module '@/registry/components/chevrons-up-down-icon' or its corresponding type declarations.
+src/features/portfolio/components/awards/award-item.tsx(101,42): error TS2322: Type '{ duration: number; }' is not assignable to type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+  Property 'duration' does not exist on type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+src/features/portfolio/components/experiences/experience-position-item.tsx(57,38): error TS2322: Type '{ duration: number; }' is not assignable to type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+  Property 'duration' does not exist on type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+src/features/portfolio/components/projects/project-item.tsx(104,40): error TS2322: Type '{ duration: number; }' is not assignable to type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+  Property 'duration' does not exist on type 'IntrinsicAttributes & Omit<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>, "ref">'.
+src/scripts/build-registry.mts(132,37): error TS2307: Cannot find module '@/registry/index' or its corresponding type declarations.

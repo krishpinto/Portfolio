@@ -1,0 +1,3825 @@
+﻿
+> chanhdai.com@0.1.0 build C:\Users\krish\OneDrive\Desktop\chndai
+> next build
+
+node.exe : ΓÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At C:\Users\krish\AppData\R
+oaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$based
+ir/node_modules/pnpm/bin/pn
+pm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (ΓÜá  
+   Warning: Ne...not be    
+ correct.:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\krish
+\package-lock.json as the 
+root directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/d
+ocs/app/api-reference/confi
+g/next-config-js/turbopack#
+root-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\krish\OneDriv
+e\Desktop\chndai\pnpm-works
+pace.yaml
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build 
+failed with 62 errors:
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:5
+11:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+blog-01/blog-01.tsx'
+  [90m509 |[0m ...}],
+  [90m510 |[0m 
+...component: [33mReact[0
+m.lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m511 
+|[0m ...  [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+blocks/blog-01/blog-01.tsx"
+[0m)
+  [90m    |[0m           
+             [31m[1m^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m512 |[0m ...  
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mty...[0m
+  [90m513 |[0m ...  
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m514 |[0m ...}),
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/blog-01/blog-01.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:5
+32:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+blog-02/blog-02.tsx'
+  [90m530 |[0m ...}],
+  [90m531 |[0m 
+...component: [33mReact[0
+m.lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m532 
+|[0m ...  [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+blocks/blog-02/blog-02.tsx"
+[0m)
+  [90m    |[0m           
+             [31m[1m^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m533 |[0m ...  
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mty...[0m
+  [90m534 |[0m ...  
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m535 |[0m ...}),
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/blog-02/blog-02.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:5
+91:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+experience-01/experience-01
+.tsx'
+  [90m589 |[0m ...
+  [90m590 |[0m ...ent: [
+33mReact[0m.lazy([36masyn
+c[0m () => {
+[31m[1m>[0m [90m591 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/blocks
+/experience-01/experience-0
+1.tsx"[0m)
+  [90m    |[0m           
+       [31m[1m^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m592 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m m...
+  [90m593 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m594 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/experience-01/experien
+ce-01.tsx' inside of [proje
+ct]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:4
+90:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+hero-01/hero-01.tsx'
+  [90m488 |[0m ...}],
+  [90m489 |[0m 
+...component: [33mReact[0
+m.lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m490 
+|[0m ...  [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+blocks/hero-01/hero-01.tsx"
+[0m)
+  [90m    |[0m           
+             [31m[1m^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m491 |[0m ...  
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mty...[0m
+  [90m492 |[0m ...  
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m493 |[0m ...}),
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/hero-01/hero-01.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:4
+69:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+login-01/page.tsx'
+  [90m467 |[0m ... }],
+  [90m468 |[0m ... 
+component: [33mReact[0m.l
+azy([36masync[0m () => {
+[31m[1m>[0m [90m469 
+|[0m ...   [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+blocks/login-01/page.tsx"[
+0m)
+  [90m    |[0m           
+              [31m[1m^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m470 |[0m ...   
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mt...[0m
+  [90m471 |[0m ...   
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m472 |[0m ... }),
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/login-01/page.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+08:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+team-01/team-01.tsx'
+  [90m606 |[0m ...}],
+  [90m607 |[0m 
+...component: [33mReact[0
+m.lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m608 
+|[0m ...  [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+blocks/team-01/team-01.tsx"
+[0m)
+  [90m    |[0m           
+             [31m[1m^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m609 |[0m ...  
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mty...[0m
+  [90m610 |[0m ...  
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m611 |[0m ...}),
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/team-01/team-01.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:5
+53:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+testimonials-01/testimonial
+s-01.tsx'
+  [90m551 |[0m ...
+  [90m552 |[0m ...t: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m553 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/blocks
+/testimonials-01/testimonia
+ls-01.tsx"[0m)
+  [90m    |[0m           
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m554 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m555 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m556 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/testimonials-01/testim
+onials-01.tsx' inside of [p
+roject]/OneDrive/Desktop/ch
+ndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:5
+74:25
+Module not found: Can't 
+resolve '@/registry/blocks/
+testimonials-02/testimonial
+s-02.tsx'
+  [90m572 |[0m ...
+  [90m573 |[0m ...t: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m574 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/blocks
+/testimonials-02/testimonia
+ls-02.tsx"[0m)
+  [90m    |[0m           
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m575 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m576 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m577 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/bl
+ocks/testimonials-02/testim
+onials-02.tsx' inside of [p
+roject]/OneDrive/Desktop/ch
+ndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+26:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/apple-hello-effect/appl
+e-hello-effect-english.tsx'
+  [90m124 |[0m ...
+  [90m125 |[0m 
+...lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m126 
+|[0m ...[36mit[0m [36mi
+mport[0m([32m"@/registry/
+components/apple-hello-effe
+ct/apple-hello-effect-engli
+sh.tsx"[0m)
+  [90m    |[0m       [31
+m[1m^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^[0m
+  [90m127 |[0m ...e = [3
+3mObject[0m.keys(mod).find
+(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+===.[32m..[0m
+  [90m128 |[0m 
+...[36mt[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m129 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/apple-hello-effect
+/apple-hello-effect-english
+.tsx' inside of [project]/O
+neDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+43:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/apple-hello-effect/appl
+e-hello-effect-hindi.tsx'
+  [90m141 |[0m ...
+  [90m142 |[0m 
+....lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m143 
+|[0m ...[36mait[0m [36m
+import[0m([32m"@/registry
+/components/apple-hello-eff
+ect/apple-hello-effect-hind
+i.tsx"[0m)
+  [90m    |[0m        [3
+1m[1m^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^[0m
+  [90m144 |[0m ...me = [
+33mObject[0m.keys(mod).fin
+d(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+==..[32m.[0m
+  [90m145 |[0m 
+...[36mlt[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m146 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/apple-hello-effect
+/apple-hello-effect-hindi.t
+sx' inside of [project]/One
+Drive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+60:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/apple-hello-effect/appl
+e-hello-effect-spanish.tsx'
+  [90m158 |[0m ...
+  [90m159 |[0m 
+...lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m160 
+|[0m ...[36mit[0m [36mi
+mport[0m([32m"@/registry/
+components/apple-hello-effe
+ct/apple-hello-effect-spani
+sh.tsx"[0m)
+  [90m    |[0m       [31
+m[1m^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^[0m
+  [90m161 |[0m ...e = [3
+3mObject[0m.keys(mod).find
+(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+===.[32m..[0m
+  [90m162 |[0m 
+...[36mt[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m163 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/apple-hello-effect
+/apple-hello-effect-spanish
+.tsx' inside of [project]/O
+neDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+77:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/apple-hello-effect/appl
+e-hello-effect-vietnamese.t
+sx'
+  [90m175 |[0m ...
+  [90m176 |[0m 
+...zy([36masync[0m () => 
+{
+[31m[1m>[0m [90m177 
+|[0m ... [36mimport[0m(
+[32m"@/registry/components/
+apple-hello-effect/apple-he
+llo-effect-vietnamese.tsx"
+[0m)
+  [90m    |[0m     [31m
+[1m^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^[0m
+  [90m178 |[0m ...= [33m
+Object[0m.keys(mod).find(k
+ey => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+=== [32m'...[0m
+  [90m179 |[0m ... 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m180 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/apple-hello-effect
+/apple-hello-effect-vietnam
+ese.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+11:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/chevrons-up-down-icon/c
+hevrons-up-down-icon.tsx'
+  [90m209 |[0m ...
+  [90m210 |[0m 
+....lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m211 
+|[0m ...[36mait[0m [36m
+import[0m([32m"@/registry
+/components/chevrons-up-dow
+n-icon/chevrons-up-down-ico
+n.tsx"[0m)
+  [90m    |[0m        [3
+1m[1m^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^[0m
+  [90m212 |[0m ...me = [
+33mObject[0m.keys(mod).fin
+d(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+==..[32m.[0m
+  [90m213 |[0m 
+...[36mlt[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m214 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/chevrons-up-down-i
+con/chevrons-up-down-icon.t
+sx' inside of [project]/One
+Drive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+72:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/code-block-command/code
+-block-command.tsx'
+  [90m370 |[0m ...
+  [90m371 |[0m ...[33mac
+t[0m.lazy([36masync[0m 
+() => {
+[31m[1m>[0m [90m372 
+|[0m ... [36mawait[0m [
+36mimport[0m([32m"@/regis
+try/components/code-block-c
+ommand/code-block-command.t
+sx"[0m)
+  [90m    |[0m           
+[31m[1m^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m373 |[0m ...tName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[key]...
+  [90m374 |[0m 
+...[36mfault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m375 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/code-block-command
+/code-block-command.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+30:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/consent-manager/consent
+-manager.tsx'
+  [90m328 |[0m ...
+  [90m329 |[0m ... [33mR
+eact[0m.lazy([36masync[0
+m () => {
+[31m[1m>[0m [90m330 
+|[0m ...d = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/consent-manager/consen
+t-manager.tsx"[0m)
+  [90m    |[0m           
+   [31m[1m^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m331 |[0m 
+...portName = [33mObject[
+0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[k...
+  [90m332 |[0m ... 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m333 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/consent-manager/co
+nsent-manager.tsx' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+51:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/copy-button/copy-button
+.tsx'
+  [90m349 |[0m ...
+  [90m350 |[0m ...ent: [
+33mReact[0m.lazy([36masyn
+c[0m () => {
+[31m[1m>[0m [90m351 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/copy-button/copy-butto
+n.tsx"[0m)
+  [90m    |[0m           
+       [31m[1m^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m352 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m m...
+  [90m353 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m354 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/copy-button/copy-b
+utton.tsx' inside of [proje
+ct]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+96:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/github-stars/github-sta
+rs.tsx'
+  [90m294 |[0m ...
+  [90m295 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m296 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/github-stars/github-st
+ars.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m297 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m298 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m299 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/github-stars/githu
+b-stars.tsx' inside of [pro
+ject]/OneDrive/Desktop/chnd
+ai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:4
+10:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/glow-card-grid/glow-car
+d-grid.tsx'
+  [90m408 |[0m ...
+  [90m409 |[0m ...: [33m
+React[0m.lazy([36masync[
+0m () => {
+[31m[1m>[0m [90m410 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/glow-card-grid/glow-ca
+rd-grid.tsx"[0m)
+  [90m    |[0m           
+    [31m[1m^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m411 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[...
+  [90m412 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m413 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/glow-card-grid/glo
+w-card-grid.tsx' inside of 
+[project]/OneDrive/Desktop/
+chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:4
+27:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/middle-truncation/middl
+e-truncation.tsx'
+  [90m425 |[0m ...
+  [90m426 |[0m ...[33mea
+ct[0m.lazy([36masync[0m 
+() => {
+[31m[1m>[0m [90m427 
+|[0m ...= [36mawait[0m 
+[36mimport[0m([32m"@/regi
+stry/components/middle-trun
+cation/middle-truncation.ts
+x"[0m)
+  [90m    |[0m           
+ [31m[1m^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m428 |[0m ...rtName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[key...
+  [90m429 |[0m 
+...[36mefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m430 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/middle-truncation/
+middle-truncation.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+13:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/scroll-fade-effect/scro
+ll-fade-effect.tsx'
+  [90m311 |[0m ...
+  [90m312 |[0m ...[33mac
+t[0m.lazy([36masync[0m 
+() => {
+[31m[1m>[0m [90m313 
+|[0m ... [36mawait[0m [
+36mimport[0m([32m"@/regis
+try/components/scroll-fade-
+effect/scroll-fade-effect.t
+sx"[0m)
+  [90m    |[0m           
+[31m[1m^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^[0m
+  [90m314 |[0m ...tName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[key]...
+  [90m315 |[0m 
+...[36mfault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m316 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/scroll-fade-effect
+/scroll-fade-effect.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+45:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/shimmering-text/shimmer
+ing-text.tsx'
+  [90m243 |[0m ...
+  [90m244 |[0m ... [33mR
+eact[0m.lazy([36masync[0
+m () => {
+[31m[1m>[0m [90m245 
+|[0m ...d = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/shimmering-text/shimme
+ring-text.tsx"[0m)
+  [90m    |[0m           
+   [31m[1m^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m246 |[0m 
+...portName = [33mObject[
+0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[k...
+  [90m247 |[0m ... 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m248 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/shimmering-text/sh
+immering-text.tsx' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+62:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/slide-to-unlock/slide-t
+o-unlock.tsx'
+  [90m260 |[0m ...
+  [90m261 |[0m ... [33mR
+eact[0m.lazy([36masync[0
+m () => {
+[31m[1m>[0m [90m262 
+|[0m ...d = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/slide-to-unlock/slide-
+to-unlock.tsx"[0m)
+  [90m    |[0m           
+   [31m[1m^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m263 |[0m 
+...portName = [33mObject[
+0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[k...
+  [90m264 |[0m ... 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m265 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/slide-to-unlock/sl
+ide-to-unlock.tsx' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+89:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/testimonial-spotlight/t
+estimonial-spotlight.tsx'
+  [90m387 |[0m ...
+  [90m388 |[0m 
+....lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m389 
+|[0m ...[36mait[0m [36m
+import[0m([32m"@/registry
+/components/testimonial-spo
+tlight/testimonial-spotligh
+t.tsx"[0m)
+  [90m    |[0m        [3
+1m[1m^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^[0m
+  [90m390 |[0m ...me = [
+33mObject[0m.keys(mod).fin
+d(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m mod[key] 
+==..[32m.[0m
+  [90m391 |[0m 
+...[36mlt[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m392 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/testimonial-spotli
+ght/testimonial-spotlight.t
+sx' inside of [project]/One
+Drive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+79:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/testimonial/testimonial
+.tsx'
+  [90m277 |[0m ...
+  [90m278 |[0m ...ent: [
+33mReact[0m.lazy([36masyn
+c[0m () => {
+[31m[1m>[0m [90m279 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/testimonial/testimonia
+l.tsx"[0m)
+  [90m    |[0m           
+       [31m[1m^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m280 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m m...
+  [90m281 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m282 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/testimonial/testim
+onial.tsx' inside of [proje
+ct]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+09:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/text-flip/text-flip.tsx
+'
+  [90m107 |[0m ...
+  [90m108 |[0m ...onent: 
+[33mReact[0m.lazy([36mas
+ync[0m () => {
+[31m[1m>[0m [90m109 
+|[0m ...[36mnst[0m mod 
+= [36mawait[0m [36mimpor
+t[0m([32m"@/registry/comp
+onents/text-flip/text-flip.
+tsx"[0m)
+  [90m    |[0m           
+         [31m[1m^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m110 |[0m 
+...[36mnst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m...
+  [90m111 |[0m 
+...[36mturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m112 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/text-flip/text-fli
+p.tsx' inside of [project]/
+OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+2:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/theme-switcher/theme-sw
+itcher.tsx'
+  [90m90 |[0m ...
+  [90m91 |[0m ...: [33mR
+eact[0m.lazy([36masync[0
+m () => {
+[31m[1m>[0m [90m92 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/theme-switcher/theme-s
+witcher.tsx"[0m)
+  [90m   |[0m            
+   [31m[1m^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m93 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[k...
+  [90m94 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m95 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/theme-switcher/the
+me-switcher.tsx' inside of 
+[project]/OneDrive/Desktop/
+chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:4
+48:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/twemoji/twemoji.tsx'
+  [90m446 |[0m ...,
+  [90m447 |[0m 
+...mponent: [33mReact[0m.
+lazy([36masync[0m () => {
+[31m[1m>[0m [90m448 
+|[0m ...[36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+components/twemoji/twemoji.
+tsx"[0m)
+  [90m    |[0m           
+           [31m[1m^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^[0m
+  [90m449 |[0m 
+...[36mconst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtype..[0m.
+  [90m450 |[0m 
+...[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m451 |[0m ...,
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/twemoji/twemoji.ts
+x' inside of [project]/OneD
+rive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+94:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/wheel-picker/wheel-pick
+er.tsx'
+  [90m192 |[0m ...
+  [90m193 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m194 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/wheel-picker/wheel-pic
+ker.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m195 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m196 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m197 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/wheel-picker/wheel
+-picker.tsx' inside of [pro
+ject]/OneDrive/Desktop/chnd
+ai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:2
+28:25
+Module not found: Can't 
+resolve '@/registry/compone
+nts/work-experience/work-ex
+perience.tsx'
+  [90m226 |[0m ...
+  [90m227 |[0m ... [33mR
+eact[0m.lazy([36masync[0
+m () => {
+[31m[1m>[0m [90m228 
+|[0m ...d = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/compon
+ents/work-experience/work-e
+xperience.tsx"[0m)
+  [90m    |[0m           
+   [31m[1m^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m229 |[0m 
+...portName = [33mObject[
+0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[k...
+  [90m230 |[0m ... 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m231 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/co
+mponents/work-experience/wo
+rk-experience.tsx' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+42:25
+Module not found: Can't 
+resolve '@/registry/example
+s/apple-hello-effect-englis
+h-demo.tsx'
+  [90m640 |[0m ...
+  [90m641 |[0m ...: [33m
+React[0m.lazy([36masync[
+0m () => {
+[31m[1m>[0m [90m642 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/apple-hello-effect-engli
+sh-demo.tsx"[0m)
+  [90m    |[0m           
+    [31m[1m^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m643 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[...
+  [90m644 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m645 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/apple-hello-effect-e
+nglish-demo.tsx' inside of 
+[project]/OneDrive/Desktop/
+chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+59:25
+Module not found: Can't 
+resolve '@/registry/example
+s/apple-hello-effect-hindi-
+demo.tsx'
+  [90m657 |[0m ...
+  [90m658 |[0m ...t: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m659 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/apple-hello-effect-hindi
+-demo.tsx"[0m)
+  [90m    |[0m           
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m660 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m661 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m662 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/apple-hello-effect-h
+indi-demo.tsx' inside of [p
+roject]/OneDrive/Desktop/ch
+ndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+76:25
+Module not found: Can't 
+resolve '@/registry/example
+s/apple-hello-effect-spanis
+h-demo.tsx'
+  [90m674 |[0m ...
+  [90m675 |[0m ...: [33m
+React[0m.lazy([36masync[
+0m () => {
+[31m[1m>[0m [90m676 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/apple-hello-effect-spani
+sh-demo.tsx"[0m)
+  [90m    |[0m           
+    [31m[1m^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m677 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[...
+  [90m678 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m679 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/apple-hello-effect-s
+panish-demo.tsx' inside of 
+[project]/OneDrive/Desktop/
+chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+93:25
+Module not found: Can't 
+resolve '@/registry/example
+s/apple-hello-effect-vietna
+mese-demo.tsx'
+  [90m691 |[0m ...
+  [90m692 |[0m ...[33mRe
+act[0m.lazy([36masync[0m
+ () => {
+[31m[1m>[0m [90m693 
+|[0m ... = [36mawait[0m 
+[36mimport[0m([32m"@/reg
+istry/examples/apple-hello-
+effect-vietnamese-demo.tsx"
+[0m)
+  [90m    |[0m           
+  [31m[1m^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m694 |[0m 
+...ortName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[ke...
+  [90m695 |[0m 
+...[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m696 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/apple-hello-effect-v
+ietnamese-demo.tsx' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+016:25
+Module not found: Can't 
+resolve '@/registry/example
+s/code-block-command-conver
+t-demo.tsx'
+  [90m1014 |[0m ...
+  [90m1015 |[0m ... [33m
+React[0m.lazy([36masync[
+0m () => {
+[31m[1m>[0m [90m1016 
+|[0m ...d = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/code-block-command-conve
+rt-demo.tsx"[0m)
+  [90m     |[0m          
+    [31m[1m^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m1017 |[0m 
+...portName = [33mObject[
+0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod[...
+  [90m1018 |[0m ... 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1019 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/code-block-command-c
+onvert-demo.tsx' inside of 
+[project]/OneDrive/Desktop/
+chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+99:25
+Module not found: Can't 
+resolve '@/registry/example
+s/code-block-command-demo.t
+sx'
+  [90m 997 |[0m ...
+  [90m 998 |[0m ...ent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m 999 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/code-block-command-demo.
+tsx"[0m)
+  [90m     |[0m          
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m1000 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m1001 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1002 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/code-block-command-d
+emo.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+033:25
+Module not found: Can't 
+resolve '@/registry/example
+s/copy-button-demo.tsx'
+  [90m1031 |[0m ...
+  [90m1032 |[0m 
+...ponent: [33mReact[0m.l
+azy([36masync[0m () => {
+[31m[1m>[0m [90m1033 
+|[0m ...[36monst[0m mod 
+= [36mawait[0m [36mimpor
+t[0m([32m"@/registry/exam
+ples/copy-button-demo.tsx"
+[0m)
+  [90m     |[0m          
+           [31m[1m^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^[0m
+  [90m1034 |[0m 
+...[36monst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtype..[0m.
+  [90m1035 |[0m 
+...[36meturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1036 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/copy-button-demo.tsx
+' inside of [project]/OneDr
+ive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+14:25
+Module not found: Can't 
+resolve '@/registry/example
+s/github-stars-demo.tsx'
+  [90m912 |[0m ...,
+  [90m913 |[0m 
+...mponent: [33mReact[0m.
+lazy([36masync[0m () => {
+[31m[1m>[0m [90m914 
+|[0m ...[36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/github-stars-demo.
+tsx"[0m)
+  [90m    |[0m           
+           [31m[1m^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^[0m
+  [90m915 |[0m 
+...[36mconst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtype..[0m.
+  [90m916 |[0m 
+...[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m917 |[0m ...,
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/github-stars-demo.ts
+x' inside of [project]/OneD
+rive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+101:25
+Module not found: Can't 
+resolve '@/registry/example
+s/glow-card-grid-demo-01.ts
+x'
+  [90m1099 |[0m ...
+  [90m1100 |[0m ...ent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m1101 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/glow-card-grid-demo-01.t
+sx"[0m)
+  [90m     |[0m          
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m1102 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m1103 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1104 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/glow-card-grid-demo-
+01.tsx' inside of [project]
+/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+118:25
+Module not found: Can't 
+resolve '@/registry/example
+s/glow-card-grid-dialkit-de
+mo.tsx'
+  [90m1116 |[0m ...
+  [90m1117 |[0m ...t: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m1118 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/glow-card-grid-dialkit-d
+emo.tsx"[0m)
+  [90m     |[0m          
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m1119 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m1120 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1121 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/glow-card-grid-dialk
+it-demo.tsx' inside of [pro
+ject]/OneDrive/Desktop/chnd
+ai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+050:25
+Module not found: Can't 
+resolve '@/registry/example
+s/haptic-demo.tsx'
+  [90m1048 |[0m ...}],
+  [90m1049 |[0m 
+...component: [33mReact[0
+m.lazy([36masync[0m () 
+=> {
+[31m[1m>[0m [90m1050 
+|[0m ...  [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/haptic-demo.tsx"[
+0m)
+  [90m     |[0m          
+              [31m[1m^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m1051 |[0m ...  
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mt...[0m
+  [90m1052 |[0m ...  
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1053 |[0m ...}),
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/haptic-demo.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+135:25
+Module not found: Can't 
+resolve '@/registry/example
+s/middle-truncation-demo.ts
+x'
+  [90m1133 |[0m ...
+  [90m1134 |[0m ...ent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m1135 
+|[0m ...[36mt[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/middle-truncation-demo.t
+sx"[0m)
+  [90m     |[0m          
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m1136 |[0m 
+...[36mt[0m exportName = 
+[33mObject[0m.keys(mod).f
+ind(key => [36mtypeof[0m 
+mod[key] === 
+[32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m1137 |[0m 
+...[36mrn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1138 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/middle-truncation-de
+mo.tsx' inside of [project]
+/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+31:25
+Module not found: Can't 
+resolve '@/registry/example
+s/scroll-fade-effect-demo-0
+1.tsx'
+  [90m929 |[0m ...
+  [90m930 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m931 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/scroll-fade-effect-demo-
+01.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m932 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m933 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m934 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/scroll-fade-effect-d
+emo-01.tsx' inside of [proj
+ect]/OneDrive/Desktop/chnda
+i
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+48:25
+Module not found: Can't 
+resolve '@/registry/example
+s/scroll-fade-effect-demo-0
+2.tsx'
+  [90m946 |[0m ...
+  [90m947 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m948 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/scroll-fade-effect-demo-
+02.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m949 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m950 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m951 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/scroll-fade-effect-d
+emo-02.tsx' inside of [proj
+ect]/OneDrive/Desktop/chnda
+i
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+65:25
+Module not found: Can't 
+resolve '@/registry/example
+s/scroll-fade-effect-demo-0
+3.tsx'
+  [90m963 |[0m ...
+  [90m964 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m965 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/scroll-fade-effect-demo-
+03.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m966 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m967 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m968 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/scroll-fade-effect-d
+emo-03.tsx' inside of [proj
+ect]/OneDrive/Desktop/chnda
+i
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:9
+82:25
+Module not found: Can't 
+resolve '@/registry/example
+s/scroll-fade-effect-demo-0
+4.tsx'
+  [90m980 |[0m ...
+  [90m981 |[0m ...nt: [3
+3mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m982 
+|[0m ... mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/scroll-fade-effect-demo-
+04.tsx"[0m)
+  [90m    |[0m           
+      [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m983 |[0m ... 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mo...
+  [90m984 |[0m 
+...[36mn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m985 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/scroll-fade-effect-d
+emo-04.tsx' inside of [proj
+ect]/OneDrive/Desktop/chnda
+i
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+78:25
+Module not found: Can't 
+resolve '@/registry/example
+s/shimmering-text-demo-01.t
+sx'
+  [90m776 |[0m ...
+  [90m777 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m778 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/shimmering-text-demo-01.
+tsx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m779 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m780 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m781 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/shimmering-text-demo
+-01.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+95:25
+Module not found: Can't 
+resolve '@/registry/example
+s/shimmering-text-demo-02.t
+sx'
+  [90m793 |[0m ...
+  [90m794 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m795 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/shimmering-text-demo-02.
+tsx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m796 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m797 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m798 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/shimmering-text-demo
+-02.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+12:25
+Module not found: Can't 
+resolve '@/registry/example
+s/slide-to-unlock-demo-01.t
+sx'
+  [90m810 |[0m ...
+  [90m811 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m812 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/slide-to-unlock-demo-01.
+tsx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m813 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m814 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m815 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/slide-to-unlock-demo
+-01.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+29:25
+Module not found: Can't 
+resolve '@/registry/example
+s/slide-to-unlock-demo-02.t
+sx'
+  [90m827 |[0m ...
+  [90m828 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m829 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/slide-to-unlock-demo-02.
+tsx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m830 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m831 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m832 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/slide-to-unlock-demo
+-02.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+46:25
+Module not found: Can't 
+resolve '@/registry/example
+s/slide-to-unlock-demo-03.t
+sx'
+  [90m844 |[0m ...
+  [90m845 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m846 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/slide-to-unlock-demo-03.
+tsx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m847 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m848 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m849 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/slide-to-unlock-demo
+-03.tsx' inside of [project
+]/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+63:25
+Module not found: Can't 
+resolve '@/registry/example
+s/testimonial-demo.tsx'
+  [90m861 |[0m ...,
+  [90m862 |[0m 
+...mponent: [33mReact[0m.
+lazy([36masync[0m () => {
+[31m[1m>[0m [90m863 
+|[0m ...[36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/testimonial-demo.t
+sx"[0m)
+  [90m    |[0m           
+           [31m[1m^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^[0m
+  [90m864 |[0m 
+...[36mconst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtype..[0m.
+  [90m865 |[0m 
+...[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m866 |[0m ...,
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/testimonial-demo.tsx
+' inside of [project]/OneDr
+ive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+067:25
+Module not found: Can't 
+resolve '@/registry/example
+s/testimonial-spotlight-dem
+o-01.tsx'
+  [90m1065 |[0m ...
+  [90m1066 |[0m ...: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m1067 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/testimonial-spotlight-de
+mo-01.tsx"[0m)
+  [90m     |[0m          
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m1068 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m1069 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1070 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/testimonial-spotligh
+t-demo-01.tsx' inside of [p
+roject]/OneDrive/Desktop/ch
+ndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+084:25
+Module not found: Can't 
+resolve '@/registry/example
+s/testimonial-spotlight-dem
+o-02.tsx'
+  [90m1082 |[0m ...
+  [90m1083 |[0m ...: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m1084 
+|[0m ...od = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/testimonial-spotlight-de
+mo-02.tsx"[0m)
+  [90m     |[0m          
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m1085 |[0m 
+...xportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m1086 |[0m ...{ 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1087 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/testimonial-spotligh
+t-demo-02.tsx' inside of [p
+roject]/OneDrive/Desktop/ch
+ndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+80:25
+Module not found: Can't 
+resolve '@/registry/example
+s/testimonials-marquee-demo
+-01.tsx'
+  [90m878 |[0m ...
+  [90m879 |[0m ...t: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m880 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/testimonials-marquee-dem
+o-01.tsx"[0m)
+  [90m    |[0m           
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m881 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m882 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m883 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/testimonials-marquee
+-demo-01.tsx' inside of [pr
+oject]/OneDrive/Desktop/chn
+dai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:8
+97:25
+Module not found: Can't 
+resolve '@/registry/example
+s/testimonials-marquee-demo
+-02.tsx'
+  [90m895 |[0m ...
+  [90m896 |[0m ...t: [33
+mReact[0m.lazy([36masync
+[0m () => {
+[31m[1m>[0m [90m897 
+|[0m ...mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/testimonials-marquee-dem
+o-02.tsx"[0m)
+  [90m    |[0m           
+     [31m[1m^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m898 |[0m 
+...exportName = [33mObject
+[0m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m mod...
+  [90m899 |[0m ... { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m900 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/testimonials-marquee
+-demo-02.tsx' inside of [pr
+oject]/OneDrive/Desktop/chn
+dai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:6
+25:25
+Module not found: Can't 
+resolve '@/registry/example
+s/text-flip-demo.tsx'
+  [90m623 |[0m ...],
+  [90m624 |[0m 
+...omponent: [33mReact[0m
+.lazy([36masync[0m () => 
+{
+[31m[1m>[0m [90m625 
+|[0m ... [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/text-flip-demo.tsx
+"[0m)
+  [90m    |[0m           
+            [31m[1m^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^[0m
+  [90m626 |[0m ... 
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtyp...[0m
+  [90m627 |[0m ... 
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m628 |[0m ...),
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/text-flip-demo.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+10:25
+Module not found: Can't 
+resolve '@/registry/example
+s/theme-switcher-demo.tsx'
+  [90m708 |[0m ...
+  [90m709 |[0m 
+...ponent: [33mReact[0m.l
+azy([36masync[0m () => {
+[31m[1m>[0m [90m710 
+|[0m ...[36monst[0m mod 
+= [36mawait[0m [36mimpor
+t[0m([32m"@/registry/exam
+ples/theme-switcher-demo.ts
+x"[0m)
+  [90m    |[0m           
+          [31m[1m^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m711 |[0m 
+...[36monst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeo.[0m..
+  [90m712 |[0m 
+...[36meturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m713 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/theme-switcher-demo.
+tsx' inside of [project]/On
+eDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:1
+152:25
+Module not found: Can't 
+resolve '@/registry/example
+s/twemoji-demo.tsx'
+  [90m1150 |[0m ...],
+  [90m1151 |[0m 
+...omponent: [33mReact[0m
+.lazy([36masync[0m () => 
+{
+[31m[1m>[0m [90m1152 
+|[0m ... [36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/twemoji-demo.tsx"
+[0m)
+  [90m     |[0m          
+             [31m[1m^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m1153 |[0m ... 
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mty...[0m
+  [90m1154 |[0m ... 
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m1155 |[0m ...),
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/twemoji-demo.tsx' 
+inside of [project]/OneDriv
+e/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+27:25
+Module not found: Can't 
+resolve '@/registry/example
+s/wheel-picker-demo.tsx'
+  [90m725 |[0m ...,
+  [90m726 |[0m 
+...mponent: [33mReact[0m.
+lazy([36masync[0m () => {
+[31m[1m>[0m [90m727 
+|[0m ...[36mconst[0m 
+mod = [36mawait[0m [36mi
+mport[0m([32m"@/registry/
+examples/wheel-picker-demo.
+tsx"[0m)
+  [90m    |[0m           
+           [31m[1m^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^[0m
+  [90m728 |[0m 
+...[36mconst[0m 
+exportName = [33mObject[0
+m.keys(mod).find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtype..[0m.
+  [90m729 |[0m 
+...[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m730 |[0m ...,
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/wheel-picker-demo.ts
+x' inside of [project]/OneD
+rive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+44:25
+Module not found: Can't 
+resolve '@/registry/example
+s/wheel-picker-form-demo.ts
+x'
+  [90m742 |[0m ...
+  [90m743 |[0m ...nent: 
+[33mReact[0m.lazy([36masy
+nc[0m () => {
+[31m[1m>[0m [90m744 
+|[0m ...[36mst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/exampl
+es/wheel-picker-form-demo.t
+sx"[0m)
+  [90m    |[0m           
+        [31m[1m^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m745 |[0m 
+...[36mst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m ...
+  [90m746 |[0m 
+...[36murn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m747 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/wheel-picker-form-de
+mo.tsx' inside of [project]
+/OneDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:7
+61:25
+Module not found: Can't 
+resolve '@/registry/example
+s/work-experience-demo.tsx'
+  [90m759 |[0m ...
+  [90m760 |[0m ...onent: 
+[33mReact[0m.lazy([36mas
+ync[0m () => {
+[31m[1m>[0m [90m761 
+|[0m ...[36mnst[0m mod 
+= [36mawait[0m [36mimpor
+t[0m([32m"@/registry/exam
+ples/work-experience-demo.t
+sx"[0m)
+  [90m    |[0m           
+         [31m[1m^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m762 |[0m 
+...[36mnst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36mtypeof[0m...
+  [90m763 |[0m 
+...[36mturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m764 |[0m ...
+
+Import map: aliased to 
+relative './src/registry/ex
+amples/work-experience-demo
+.tsx' inside of [project]/O
+neDrive/Desktop/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+./OneDrive/Desktop/chndai/s
+rc/__registry__/index.tsx:3
+7:25
+Module not found: Can't 
+resolve '@/registry/lib/hap
+tic/haptic.ts'
+  [90m35 |[0m ...   }],
+  [90m36 |[0m ...   
+component: [33mReact[0m.l
+azy([36masync[0m () => {
+[31m[1m>[0m [90m37 
+|[0m ...     
+[36mconst[0m mod = 
+[36mawait[0m [36mimport
+[0m([32m"@/registry/lib/ha
+ptic/haptic.ts"[0m)
+  [90m   |[0m            
+               [31m[1m^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^[0m
+  [90m38 |[0m ...     
+[36mconst[0m exportName 
+= [33mObject[0m.keys(mod)
+.find(key => 
+[36mtypeof[0m mod[key] 
+=== [32m'function'[0m || 
+[36m...[0m
+  [90m39 |[0m ...     
+[36mreturn[0m { 
+[36mdefault[0m: 
+mod.[36mdefault[0m || 
+mod[exportName] }
+  [90m40 |[0m ...   }),
+
+Import map: aliased to 
+relative './src/registry/li
+b/haptic/haptic.ts' inside 
+of [project]/OneDrive/Deskt
+op/chndai
+
+
+Import trace:
+  Server Component:
+    ./OneDrive/Desktop/chnd
+ai/src/__registry__/index.t
+sx
+    ./OneDrive/Desktop/chnd
+ai/src/app/(preview)/previe
+w/[name]/page.tsx
+
+https://nextjs.org/docs/mes
+sages/module-not-found
+
+
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:511:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:532:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:591:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:490:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:469:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:608:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:553:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:574:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:126:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:143:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:160:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:177:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:211:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:372:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:330:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:351:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:296:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:410:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:427:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:313:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:245:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:262:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:389:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:279:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:109:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:92:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:448:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:194:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:228:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:642:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:659:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:676:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:693:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1016:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:999:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1033:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:914:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1101:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1118:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1050:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1135:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:931:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:948:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:965:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:982:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:778:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:795:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:812:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:829:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:846:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:863:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1067:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1084:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:880:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:897:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:625:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:710:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:1152:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:727:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:744:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:761:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+    at <unknown> (./OneDriv
+e/Desktop/chndai/src/__regi
+stry__/index.tsx:37:25)
+    at <unknown> (https://n
+extjs.org/docs/messages/mod
+ule-not-found)
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

@@ -1,0 +1,86 @@
+﻿
+> chanhdai.com@0.1.0 build C:\Users\krish\OneDrive\Desktop\chndai
+> next build
+
+node.exe : ΓÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At C:\Users\krish\AppData\R
+oaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$based
+ir/node_modules/pnpm/bin/pn
+pm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (ΓÜá  
+   Warning: Ne...not be    
+ correct.:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\krish
+\package-lock.json as the 
+root directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/d
+ocs/app/api-reference/confi
+g/next-config-js/turbopack#
+root-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\krish\OneDriv
+e\Desktop\chndai\pnpm-works
+pace.yaml
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.2s
+  Running TypeScript ...
+Failed to type check.
+
+./src/components/collapsibl
+e-animated.tsx:14:8
+Type error: Cannot find 
+module '@/registry/componen
+ts/chevrons-up-down-icon' 
+or its corresponding type 
+declarations.
+
+  [90m12 |[0m   [33mChev
+ronsUpDownIconHandle[0m,
+  [90m13 |[0m   [33mChev
+ronsUpDownIconProps[0m,
+[31m[1m>[0m [90m14 
+|[0m } [36mfrom[0m [32m
+"@/registry/components/chev
+rons-up-down-icon"[0m
+  [90m   |[0m        
+[31m[1m^[0m
+  [90m15 |[0m 
+[36mimport[0m { [33mChev
+ronsUpDownIcon[0m } 
+[36mfrom[0m [32m"@/regis
+try/components/chevrons-up-
+down-icon"[0m
+  [90m16 |[0m
+  [90m17 |[0m 
+[36mtype[0m [33mCollapsi
+bleContextType[0m = {
+Next.js build worker 
+exited with code: 1 and 
+signal: null
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

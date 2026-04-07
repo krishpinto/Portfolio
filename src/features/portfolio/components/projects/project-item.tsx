@@ -101,7 +101,7 @@ export function ProjectItem({
             </Tooltip>
 
             <div className="shrink-0 text-muted-foreground [&_svg]:size-4">
-              <CollapsibleChevronsIcon duration={0.15} />
+              <CollapsibleChevronsIcon />
             </div>
           </CollapsibleTrigger>
         </div>

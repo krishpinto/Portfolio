@@ -1,0 +1,105 @@
+﻿
+> chanhdai.com@0.1.0 build C:\Users\krish\OneDrive\Desktop\chndai
+> next build
+
+node.exe : ΓÜá Warning: 
+Next.js inferred your 
+workspace root, but it may 
+not be correct.
+At C:\Users\krish\AppData\R
+oaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$based
+ir/node_modules/pnpm/bin/pn
+pm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (ΓÜá  
+   Warning: Ne...not be    
+ correct.:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\krish
+\package-lock.json as the 
+root directory.
+ To silence this warning, 
+set `turbopack.root` in 
+your Next.js config, or 
+consider removing one of 
+the lockfiles if it's not 
+needed.
+   See https://nextjs.org/d
+ocs/app/api-reference/confi
+g/next-config-js/turbopack#
+root-directory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * C:\Users\krish\OneDriv
+e\Desktop\chndai\pnpm-works
+pace.yaml
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.2s
+  Running TypeScript ...
+Failed to type check.
+
+./src/components/code-block
+-command.tsx:87:9
+Type error: Type '{ 
+className: string; size: 
+"icon-xs"; text: string; 
+event: string; }' is not 
+assignable to type 
+'IntrinsicAttributes & 
+ButtonProps & 
+VariantProps<(props?: 
+(ConfigVariants<{ variant: 
+{ default: string; 
+outline: string; 
+secondary: string; ghost: 
+string; destructive: 
+string; link: string; }; 
+size: { ...; }; }> & 
+ClassProp) | undefined) => 
+string> & { ...; }'.
+  Property 'event' does 
+not exist on type 
+'IntrinsicAttributes & 
+ButtonProps & 
+VariantProps<(props?: 
+(ConfigVariants<{ variant: 
+{ default: string; 
+outline: string; 
+secondary: string; ghost: 
+string; destructive: 
+string; link: string; }; 
+size: { ...; }; }> & 
+ClassProp) | undefined) => 
+string> & { ...; }'.
+
+  [90m85 |[0m         
+size=[32m"icon-xs"[0m
+  [90m86 |[0m         
+text={tabs[packageManager] 
+|| [32m""[0m}
+[31m[1m>[0m [90m87 
+|[0m         event=[32m"c
+opy_npm_command"[0m
+  [90m   |[0m         
+[31m[1m^[0m
+  [90m88 |[0m       />
+  [90m89 |[0m     </div>
+  [90m90 |[0m   )
+Next.js build worker 
+exited with code: 1 and 
+signal: null
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
