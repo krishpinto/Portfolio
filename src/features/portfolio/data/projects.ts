@@ -2,239 +2,133 @@ import type { Project } from "../types/projects"
 
 export const PROJECTS: Project[] = [
   {
-    id: "react-wheel-picker",
-    title: "React Wheel Picker",
-    period: {
-      start: "05.2025",
-    },
-    link: "https://react-wheel-picker.chanhdai.com",
-    skills: [
-      "Open Source",
-      "React",
-      "TypeScript",
-      "Monorepo",
-      "Turborepo",
-      "pnpm-workspace",
-      "Package Publishing",
-      "NPM Registry",
-      "GitHub Actions",
-    ],
-    description: `iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. / Backed by [▲Vercel OSS Program](https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker)
-- Natural touch scrolling with smooth inertia, mouse drag and scroll for desktop
-- Infinite loop scrolling
-- Unstyled core for complete style customization
-- Full keyboard navigation and type-ahead search
-`,
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
-    isExpanded: true,
-  },
-  {
-    id: "chanhdaidotcom",
-    title: "chanhdai.com",
+    id: "sentinel",
+    title: "Sentinel",
     period: {
       start: "01.2025",
     },
-    link: "https://github.com/ncdai/chanhdai.com",
+    link: "https://github.com/krishpinto/Sentinel",
     skills: [
-      "Open Source",
-      "Next.js 16",
-      "Tailwind CSS v4",
-      "Radix UI",
-      "Motion",
-      "shadcn/ui",
-      "shadcn registry",
-      "Vercel",
+      "React Native",
+      "Kotlin",
+      "Android",
+      "On-Device ML",
+      "Telephony APIs",
+      "Foreground Services",
     ],
-    description:
-      "A minimal, pixel-perfect dev portfolio, shadcn registry, and blog.",
-    logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+    description: `On-device Android scam detection system with real-time ML inference and system-level call interception.
+- Custom Android launcher with system-level call interception and real-time on-device ML inference.
+- No cloud dependency, sub-200ms detection latency.
+- Hybrid React Native + Kotlin architecture using Android's native telephony APIs.
+- Foreground service persistence across device lifecycle.
+- **1st Place @ Hack4Innovation VesIT** (1700+ participants)
+- **1st Place @ 30 Hard Academy Hackathon** (1600+ participants)`,
+    isExpanded: true,
   },
   {
-    id: "quaricdotcom",
-    title: "quaric.com",
+    id: "artemis",
+    title: "Artemis",
     period: {
-      start: "03.2024",
+      start: "03.2025",
     },
-    link: "https://quaric.com",
+    link: "https://github.com/krishpinto",
     skills: [
-      "Company Project",
-      "Next.js 15",
-      "Tailwind CSS v3",
-      "shadcn/ui",
-      "Strapi 5",
-      "VNPAY-QR",
-      "Docker",
-      "Docker Compose",
-      "NGINX",
+      "Go",
+      "Kubernetes",
+      "Minikube",
+      "PostgreSQL",
+      "Redis",
+      "MinIO",
+      "Grafana",
+      "Terraform",
     ],
-    logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
+    description: `Self-hosted Kubernetes infrastructure operator — a self-hosted alternative to Railway.
+- Provisions infrastructure services (PostgreSQL, Redis, MinIO, Grafana) from declarative manifests.
+- Multi-tenant service provisioning engine — developers declare desired state, Artemis reconciles it.
+- Exposes stable connection string endpoints (postgresql://, redis://) ready for direct .env consumption.
+- Persistent volume claim binding + pod restart survival.`,
   },
   {
-    id: "zadark",
-    title: "ZaDark",
+    id: "cardioedge",
+    title: "CardioEdge",
     period: {
-      start: "01.2022",
+      start: "02.2025",
     },
-    link: "https://zadark.com",
+    link: "https://github.com/krishpinto",
     skills: [
-      "Pet Project",
-      "Open Source",
-      "Browser Extension",
-      "CLI",
-      "Docusaurus 3",
+      "PyTorch",
+      "Verilog RTL",
+      "FPGA",
+      "INT8 Quantization",
+      "DSP48E1",
+      "Vivado",
+      "Artix-7",
     ],
-    description: `ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.
-- Earned 10M+ VND in net sales from a paid Safari Extension*
-- 80k+ downloads on SourceForge* (awarded Community Leader badge by SourceForge)
-- 30k+ active users via Chrome Web Store*
-- Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-
-<p class="text-muted-foreground">* Peak metrics recorded; actual current figures may vary.</p>
-`,
-    logo: "https://assets.chanhdai.com/images/project-logos/zadark.svg",
+    description: `Edge AI cardiac inference engine on FPGA — full pipeline from PyTorch to hand-coded Verilog RTL.
+- Trained lightweight 1D-CNN on MIT-BIH Arrhythmia Database (87,554 samples, SMOTE-balanced to 362,355) — 98.31% accuracy across 5 arrhythmia classes.
+- Quantized FP32 → INT8 (875 KB → 218 KB, 4x compression, zero accuracy loss).
+- Complete inference pipeline in hand-coded Verilog RTL (no HLS): mac.v, conv1d_block.v, maxpool1d.v, relu.v, fc_output.v.
+- Validated via Vivado 2025.1 XSim behavioral simulation, bit-exact hardware-software equivalence.`,
   },
   {
-    id: "qabox",
-    title: "QABox",
+    id: "widgetforge",
+    title: "WidgetForge",
     period: {
-      start: "07.2023",
-      end: "07.2023",
+      start: "11.2024",
     },
-    link: "https://github.com/ncdai/qabox",
+    link: "https://widgetforge.krishpinto.co.in",
     skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
+      "Next.js",
+      "Node.js",
+      "Qdrant",
+      "JWT",
+      "Shadow DOM",
+      "RAG",
+      "Streaming Inference",
     ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/qabox",
+    description: `Multi-tenant AI bot runtime with BYOK (Bring Your Own Key) model support.
+- BYOK chatbot platform with dynamic LLM model discovery.
+- Per-bot isolated vector memory namespaces — multi-tenant RAG across independent bot identities.
+- JWT-scoped bot identity architecture with isolated Qdrant vector namespaces.
+- Shadow DOM-isolated embeddable widget via CDN-distributed script tag.
+- Serving 100+ embed configurations with zero style bleed into host pages.`,
   },
   {
-    id: "taskbox",
-    title: "TaskBox",
+    id: "lumeo",
+    title: "Lumeo",
     period: {
-      start: "07.2023",
-      end: "07.2023",
+      start: "09.2024",
     },
-    link: "https://github.com/ncdai/taskbox",
+    link: "https://github.com/krishpinto",
     skills: [
-      "University Project",
-      "PHP",
-      "MySQL",
-      "MVC",
-      "Docker",
-      "Docker Compose",
+      "Next.js",
+      "Gemini API",
+      "Firebase",
+      "Cloudflare",
+      "LLM",
     ],
-    description:
-      "- Course: Distributed Applications — FIT@HCMUS\n- Project Score: 10/10\n- Source Code: https://github.com/ncdai/taskbox",
+    description: `AI-powered event planning platform with LLM-driven workflow generation.
+- LLM-driven workflow generation converting event inputs into structured planning timelines.
+- ~70% reduction in manual planning time.
+- ~99.5% uptime via Firebase + Cloudflare.`,
   },
   {
-    id: "daichat-app",
-    title: "DaiChat App",
+    id: "superpos",
+    title: "SuperPOS",
     period: {
-      start: "07.2020",
-      end: "07.2020",
+      start: "06.2024",
+      end: "08.2024",
     },
-    link: "https://www.youtube.com/watch?v=H5U3J_W1low",
-    skills: ["University Project", "Java", "Java Swing", "Java Networking"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Developed a real-time chat application using Java technologies
-- Project Score: 10/10
-- Source Code:
-  - Server: https://github.com/ncdai/ltudjava-summer2020-chatapp_server
-  - Client: https://github.com/ncdai/ltudjava-summer2020-chatapp_client`,
-  },
-  {
-    id: "qlsv-app",
-    title: "QLSV App",
-    period: {
-      start: "06.2020",
-      end: "06.2020",
-    },
-    link: "https://www.youtube.com/watch?v=tG9SZEBrwog",
-    skills: ["University Project", "Java", "Java Swing", "Hibernate", "MySQL"],
-    description: `- Course: Java Application Programming — FIT@HCMUS
-- Requirement: Built a student management system with role-based functionalities using Java technologies
-- Project Score: 10/10
-- Source Code: https://github.com/ncdai/ltudjava-summer2020-hibernate`,
-  },
-  {
-    id: "penphy",
-    title: "Penphy",
-    period: {
-      start: "01.2019",
-      end: "08.2019",
-    },
-    link: "https://www.youtube.com/watch?v=EdU7rUO-UA4",
-    skills: ["Startup Project", "JavaScript", "React Native"],
-    description: "2nd Prize — Business Startup Competition 2019",
-  },
-  {
-    id: "unlimitedstudy",
-    title: "UnlimitedStudy",
-    period: {
-      start: "01.2017",
-      end: "08.2018",
-    },
-    link: "https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm",
+    link: "https://github.com/krishpinto",
     skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-      "jQuery",
-      "Bootstrap 3",
+      "Next.js",
+      "Python",
+      "Cirq",
+      "Plotly",
+      "Quantum Computing",
     ],
-    description: `UnlimitedStudy is a website that provides teaching and learning support tools for teachers and students.
-- 3rd Prize — National Science and Engineering Fair 2018 (ViSEF)
-- 1st Prize — Can Tho City Science and Engineering Fair 2018
-- 3rd Prize — National Young Informatics Contest 2018
-- 2nd Prize — Can Tho City Youth and Children's Creativity Contest 2018
-- 3rd Prize — Can Tho City Young Informatics Contest 2018
-- Reached 7k+ users, mainly high school students in Can Tho City
-- Pilot implemented in high schools across Can Tho City with English quizzes, supervised by English subject specialists from the Can Tho City Department of Education and Training`,
-  },
-  {
-    id: "dmessage",
-    title: "DMessage",
-    period: {
-      start: "05.2017",
-      end: "05.2017",
-    },
-    link: "https://github.com/ncdai/DMessage",
-    skills: [
-      "Self-learning Project",
-      "Pet Project",
-      "Express.js",
-      "Socket.io",
-      "MongoDB",
-      "Mongoose ODM",
-    ],
-    description:
-      "A Messenger clone built to practice real-time communication using Socket.IO. This project showcases my self-learning journey in implementing WebSockets for instant messaging.",
-  },
-  {
-    id: "study-english",
-    title: "Study English",
-    period: {
-      start: "11.2016",
-      end: "12.2017",
-    },
-    link: "https://www.youtube.com/watch?v=OYgugvjqU4A",
-    skills: [
-      "National Competition",
-      "Creative Software",
-      "PHP",
-      "Laravel 4",
-      "MySQL",
-    ],
-    description: `Study English is a free, mobile-friendly website for high school English learning, offering vocabulary, quizzes, listening practice, and more.
-- Consolation Prize — National Youth and Children's Creativity Contest 2016
-- 1st Prize — Can Tho City Youth and Children's Creativity Contest 2016
-- Consolation Prize — Can Tho City Young Informatics Contest 2016`,
+    description: `Interactive quantum circuit simulation platform.
+- Supports 15+ gate operations for real-time circuit construction.
+- Built with Plotly, Cirq, and Next.js for a visual, interactive interface.`,
   },
 ]
