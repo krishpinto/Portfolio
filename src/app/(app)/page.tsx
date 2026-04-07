@@ -62,8 +62,8 @@ export default function Page() {
         {/* <Certifications />
         <Separator /> */}
 
-        <Bookmarks />
-        <Separator />
+        {/* <Bookmarks />
+        <Separator /> */}
       </div>
     </>
   )

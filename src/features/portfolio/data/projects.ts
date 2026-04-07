@@ -21,8 +21,7 @@ export const PROJECTS: Project[] = [
 - No cloud dependency, sub-200ms detection latency.
 - Hybrid React Native + Kotlin architecture using Android's native telephony APIs.
 - Foreground service persistence across device lifecycle.
-- **1st Place @ Hack4Innovation VesIT** (1700+ participants)
-- **1st Place @ 30 Hard Academy Hackathon** (1600+ participants)`,
+- **1st Place @ Hack4Innovation VesIT** (1700+ participants)`,
     isExpanded: true,
   },
   {

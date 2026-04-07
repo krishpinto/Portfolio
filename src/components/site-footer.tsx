@@ -17,11 +17,11 @@ export function SiteFooter() {
           Built by{" "}
           <a
             className="link transition-[color] hover:text-foreground"
-            href="https://x.com/iamncdai"
+            href="https://x.com/krishpinto"
             target="_blank"
             rel="noopener"
           >
-            ncdai
+            krishpinto
           </a>
           . The source code is available on{" "}
           <a
@@ -50,7 +50,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://x.com/iamncdai?utm_source=chanhdai.com"
+              href="https://x.com/krishpinto?utm_source=krishpinto.co.in"
               target="_blank"
               rel="noopener"
             >
@@ -62,7 +62,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://github.com/ncdai?utm_source=chanhdai.com"
+              href="https://github.com/krishpinto?utm_source=krishpinto.co.in"
               target="_blank"
               rel="noopener"
             >
@@ -74,7 +74,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://www.linkedin.com/in/ncdai?utm_source=chanhdai.com"
+              href="https://www.linkedin.com/in/krishpinto?utm_source=krishpinto.co.in"
               target="_blank"
               rel="noopener"
             >
@@ -92,21 +92,6 @@ export function SiteFooter() {
             >
               <RssIcon className="size-4" />
               <span className="sr-only">RSS</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex text-muted-foreground transition-[color] hover:text-foreground"
-              href={
-                process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
-              }
-              target="_blank"
-              rel="noopener"
-            >
-              <Icons.dmca className="h-4.5 w-auto" />
-              <span className="sr-only">DMCA.com Protection Status</span>
             </a>
           </div>
         </div>
