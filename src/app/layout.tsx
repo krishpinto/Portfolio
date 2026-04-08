@@ -7,6 +7,7 @@ import { NuqsAdapter } from "nuqs/adapters/next/app"
 import type { WebSite, WithContext } from "schema-dts"
 
 import { DuckFollower } from "@/components/duck-follower"
+import { OnekoCat } from "@/components/oneko-cat"
 import { Providers } from "@/components/providers"
 import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
@@ -127,6 +128,7 @@ export default function RootLayout({
           <NuqsAdapter>
             {children}
             <DuckFollower />
+            <OnekoCat />
           </NuqsAdapter>
         </Providers>
       </body>

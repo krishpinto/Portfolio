@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/krish/OneDrive/Desktop/ramix/public/**)",
+      "Read(//c/Users/krish/OneDrive/Desktop/ramix/**)",
+      "Bash(mkdir -p \"/c/Users/krish/OneDrive/Desktop/Portfolio/public/oneko\")",
+      "Bash(cp \"/c/Users/krish/OneDrive/Desktop/ramix/public/oneko/oneko.js\" \"/c/Users/krish/OneDrive/Desktop/Portfolio/public/oneko/oneko.js\")",
+      "Bash(cp \"/c/Users/krish/OneDrive/Desktop/ramix/public/oneko/oneko.gif\" \"/c/Users/krish/OneDrive/Desktop/Portfolio/public/oneko/oneko.gif\")"
+    ]
+  }
+}
