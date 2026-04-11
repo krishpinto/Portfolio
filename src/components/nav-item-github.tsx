@@ -6,15 +6,17 @@ import { SOURCE_CODE_GITHUB_REPO } from "@/config/site"
 const getStargazerCount = unstable_cache(
   async () => {
     try {
+      const headers: Record<string, string> = {
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+      }
+      if (process.env.GITHUB_API_TOKEN) {
+        headers.Authorization = `Bearer ${process.env.GITHUB_API_TOKEN}`
+      }
+
       const response = await fetch(
         `https://api.github.com/repos/${SOURCE_CODE_GITHUB_REPO}`,
-        {
-          headers: {
-            Accept: "application/vnd.github+json",
-            Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
-            "X-GitHub-Api-Version": "2022-11-28",
-          },
-        }
+        { headers }
       )
 
       if (!response.ok) {
