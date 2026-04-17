@@ -12,21 +12,23 @@ export const PROJECTS: Project[] = [
       { label: "GitHub", url: "https://github.com/krishpinto/artemis-cli" },
       { label: "npm", url: "https://www.npmjs.com/package/artemis-cli" },
     ],
+    copyCommand: "npx artemis-cli",
+    badge: "Artemis Cloud — Coming Soon",
     skills: [
       "Node.js",
       "TypeScript",
-      "Next.js",
+      "Kubernetes",
       "PostgreSQL",
       "Redis",
       "MongoDB",
-      "Tailwind CSS",
+      "Next.js",
       "esbuild",
       "npm",
     ],
-    description: `CLI tool for programmatic deployment of persistent, production-grade services — published to npm as a single distributable binary.
-- Full-stack web dashboard built with Next.js + TypeScript, featuring live database introspection via native pg, ioredis, and mongodb drivers.
-- Real-time health indicators and activity charts with Tailwind CSS + shadcn/ui + Recharts.
-- Entire CLI bundled into a single binary via esbuild and published to npm.`,
+    description: `One command replaces your entire dev infrastructure setup — Artemis provisions persistent, production-grade database clusters locally so your environment matches prod from day one.
+- Kubernetes-native operator: spins up PostgreSQL, Redis, and MongoDB clusters from declarative manifests, managing persistent volume claims, pod lifecycle, and stable connection endpoints across restarts.
+- Full-stack web dashboard (Next.js + TypeScript) with live database introspection via native drivers — real-time health indicators, connection strings ready for direct .env consumption.
+- Ships as a single distributable binary via esbuild, published to npm.`,
     isExpanded: true,
   },
   {

@@ -16,6 +16,10 @@ export type Project = {
   link: string
   /** Additional links shown alongside the primary link. */
   links?: { label: string; url: string }[]
+  /** If set, replaces the main link icon with a copy button for this command. */
+  copyCommand?: string
+  /** Optional badges shown at the bottom of the expanded card. */
+  badges?: { label: string; type: "achievement" | "soon" }[]
   /** Tags/technologies for chips or filtering. */
   skills: string[]
   /** Optional rich description; Markdown and line breaks supported. */

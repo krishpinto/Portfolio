@@ -1,6 +1,7 @@
-import { BoxIcon, InfinityIcon, LinkIcon, PackageIcon } from "lucide-react"
+import { BoxIcon, InfinityIcon, LinkIcon, PackageIcon, SparklesIcon } from "lucide-react"
 import { Icons } from "@/components/icons"
 import Image from "next/image"
+import { ProjectCopyButton } from "./project-copy-button"
 
 import {
   Collapsible,
@@ -55,32 +56,34 @@ export function ProjectItem({
         )}
 
         <div className="flex-1 border-l border-dashed border-line">
-          <CollapsibleTrigger className="flex w-full items-center gap-2 p-4 pr-2 text-left">
-            <div className="flex-1">
-              <h3 className="mb-1 leading-snug font-medium text-balance">
-                {project.title}
-              </h3>
+          <div className="flex w-full items-center gap-2 p-4 pr-2">
+            <CollapsibleTrigger className="flex flex-1 items-center text-left min-w-0">
+              <div className="flex-1 min-w-0">
+                <h3 className="mb-1 leading-snug font-medium text-balance">
+                  {project.title}
+                </h3>
 
-              <dl className="text-sm text-muted-foreground">
-                <dt className="sr-only">Period</dt>
-                <dd className="flex items-center gap-0.5">
-                  <span>{start}</span>
-                  {!isSinglePeriod && (
-                    <>
-                      <span className="font-mono">—</span>
-                      {isOngoing ? (
-                        <>
-                          <InfinityIcon className="size-4.5 translate-y-[0.5px]" />
-                          <span className="sr-only">Present</span>
-                        </>
-                      ) : (
-                        <span>{end}</span>
-                      )}
-                    </>
-                  )}
-                </dd>
-              </dl>
-            </div>
+                <dl className="text-sm text-muted-foreground">
+                  <dt className="sr-only">Period</dt>
+                  <dd className="flex items-center gap-0.5">
+                    <span>{start}</span>
+                    {!isSinglePeriod && (
+                      <>
+                        <span className="font-mono">—</span>
+                        {isOngoing ? (
+                          <>
+                            <InfinityIcon className="size-4.5 translate-y-[0.5px]" />
+                            <span className="sr-only">Present</span>
+                          </>
+                        ) : (
+                          <span>{end}</span>
+                        )}
+                      </>
+                    )}
+                  </dd>
+                </dl>
+              </div>
+            </CollapsibleTrigger>
 
             {project.links?.map((extraLink) => {
               const isGithub = extraLink.url.includes("github.com")
@@ -112,29 +115,34 @@ export function ProjectItem({
                 </Tooltip>
               )
             })}
-            <Tooltip>
-              <TooltipTrigger
-                render={
-                  <a
-                    className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
-                    href={addQueryParams(project.link, UTM_PARAMS)}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <LinkIcon className="pointer-events-none size-4" />
-                    <span className="sr-only">Open Project Link</span>
-                  </a>
-                }
-              />
-              <TooltipContent>
-                <p>Open Project Link</p>
-              </TooltipContent>
-            </Tooltip>
+
+            {project.copyCommand ? (
+              <ProjectCopyButton command={project.copyCommand} />
+            ) : (
+              <Tooltip>
+                <TooltipTrigger
+                  render={
+                    <a
+                      className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                      href={addQueryParams(project.link, UTM_PARAMS)}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <LinkIcon className="pointer-events-none size-4" />
+                      <span className="sr-only">Open Project Link</span>
+                    </a>
+                  }
+                />
+                <TooltipContent>
+                  <p>Open Project Link</p>
+                </TooltipContent>
+              </Tooltip>
+            )}
 
             <div className="shrink-0 text-muted-foreground [&_svg]:size-4">
               <CollapsibleChevronsIcon />
             </div>
-          </CollapsibleTrigger>
+          </div>
         </div>
       </div>
 
@@ -154,6 +162,15 @@ export function ProjectItem({
                 </li>
               ))}
             </ul>
+          )}
+
+          {project.badge && (
+            <div className="flex">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-dashed border-muted-foreground/30 bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
+                <SparklesIcon className="size-3" />
+                {project.badge}
+              </span>
+            </div>
           )}
         </div>
       </CollapsibleContent>
