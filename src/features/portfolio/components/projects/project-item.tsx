@@ -1,4 +1,5 @@
-import { BoxIcon, InfinityIcon, LinkIcon } from "lucide-react"
+import { BoxIcon, InfinityIcon, LinkIcon, PackageIcon } from "lucide-react"
+import { Icons } from "@/components/icons"
 import Image from "next/image"
 
 import {
@@ -81,6 +82,36 @@ export function ProjectItem({
               </dl>
             </div>
 
+            {project.links?.map((extraLink) => {
+              const isGithub = extraLink.url.includes("github.com")
+              const isNpm = extraLink.url.includes("npmjs.com")
+              return (
+                <Tooltip key={extraLink.url}>
+                  <TooltipTrigger
+                    render={
+                      <a
+                        className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                        href={addQueryParams(extraLink.url, UTM_PARAMS)}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        {isGithub ? (
+                          <Icons.github className="pointer-events-none size-4" />
+                        ) : isNpm ? (
+                          <PackageIcon className="pointer-events-none size-4" />
+                        ) : (
+                          <LinkIcon className="pointer-events-none size-4" />
+                        )}
+                        <span className="sr-only">{extraLink.label}</span>
+                      </a>
+                    }
+                  />
+                  <TooltipContent>
+                    <p>{extraLink.label}</p>
+                  </TooltipContent>
+                </Tooltip>
+              )
+            })}
             <Tooltip>
               <TooltipTrigger
                 render={
