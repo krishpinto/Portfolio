@@ -13,7 +13,10 @@ export const PROJECTS: Project[] = [
       { label: "npm", url: "https://www.npmjs.com/package/artemis-cli" },
     ],
     copyCommand: "npx artemis-cli",
-    badge: "Artemis Cloud — Coming Soon",
+    badges: [
+      { label: "1,000+ downloads on npm", type: "achievement" },
+      { label: "Artemis Cloud — Coming Soon", type: "soon" },
+    ],
     skills: [
       "Node.js",
       "TypeScript",
@@ -73,8 +76,10 @@ export const PROJECTS: Project[] = [
 - Custom Android launcher with system-level call interception and real-time on-device ML inference.
 - No cloud dependency, sub-200ms detection latency.
 - Hybrid React Native + Kotlin architecture using Android's native telephony APIs.
-- Foreground service persistence across device lifecycle.
-- **1st Place @ Hack4Innovation VesIT** (1700+ participants)`,
+- Foreground service persistence across device lifecycle.`,
+    badges: [
+      { label: "1st Place @ Hack4Innovation VesIT — 1,700+ participants", type: "achievement" },
+    ],
   },
   {
     id: "lumeo",

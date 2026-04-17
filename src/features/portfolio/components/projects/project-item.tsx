@@ -1,4 +1,4 @@
-import { BoxIcon, InfinityIcon, LinkIcon, PackageIcon, SparklesIcon } from "lucide-react"
+import { BoxIcon, InfinityIcon, LinkIcon, PackageIcon, SparklesIcon, TrophyIcon } from "lucide-react"
 import { Icons } from "@/components/icons"
 import Image from "next/image"
 import { ProjectCopyButton } from "./project-copy-button"
@@ -164,12 +164,25 @@ export function ProjectItem({
             </ul>
           )}
 
-          {project.badge && (
-            <div className="flex">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-dashed border-muted-foreground/30 bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-                <SparklesIcon className="size-3" />
-                {project.badge}
-              </span>
+          {project.badges && project.badges.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {project.badges.map((badge) => (
+                <span
+                  key={badge.label}
+                  className={
+                    badge.type === "achievement"
+                      ? "inline-flex items-center gap-1.5 rounded-full border border-dashed border-amber-500/40 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-600 dark:text-amber-400"
+                      : "inline-flex items-center gap-1.5 rounded-full border border-dashed border-muted-foreground/30 bg-muted px-3 py-1 text-xs font-medium text-muted-foreground"
+                  }
+                >
+                  {badge.type === "achievement" ? (
+                    <TrophyIcon className="size-3" />
+                  ) : (
+                    <SparklesIcon className="size-3" />
+                  )}
+                  {badge.label}
+                </span>
+              ))}
             </div>
           )}
         </div>
