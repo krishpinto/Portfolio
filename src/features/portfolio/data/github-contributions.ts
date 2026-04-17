@@ -11,7 +11,7 @@ export const getGitHubContributions = unstable_cache(
   async () => {
     try {
       const url = process.env.GITHUB_CONTRIBUTIONS_API_URL || "https://github-contributions-api.jogruber.de";
-      const res = await fetch(`${url}/v4/${GITHUB_USERNAME}?y=last`);
+      const res = await fetch(`${url}/v4/${GITHUB_USERNAME}?y=all`);
       if (!res.ok) return [];
       const data = (await res.json()) as GitHubContributionsResponse;
       return data.contributions || [];

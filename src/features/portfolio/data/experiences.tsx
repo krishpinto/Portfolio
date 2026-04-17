@@ -74,11 +74,12 @@ export const EXPERIENCES: Experience[] = [
         title: "Research Intern",
         employmentPeriod: {
           start: "09.2024",
+          end: "04.2026",
         },
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
-        description: `- Developing predictive maintenance system for rotary industrial machinery.
-- Analyzing sensor and operational data to detect early component failure indicators.`,
+        description: `- Developed predictive maintenance system for rotary industrial machinery.
+- Analyzed sensor and operational data to detect early component failure indicators.`,
         skills: [
           "Python",
           "PyTorch",
@@ -88,7 +89,6 @@ export const EXPERIENCES: Experience[] = [
         ],
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "education",

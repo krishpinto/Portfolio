@@ -41,6 +41,9 @@ export const PROJECTS: Project[] = [
       start: "11.2024",
     },
     link: "https://widgetforge.krishpinto.co.in",
+    links: [
+      { label: "GitHub", url: "https://github.com/krishpinto/WidgetForge" },
+    ],
     skills: [
       "Next.js",
       "Node.js",
@@ -87,7 +90,10 @@ export const PROJECTS: Project[] = [
     period: {
       start: "09.2024",
     },
-    link: "https://github.com/krishpinto",
+    link: "https://github.com/krishpinto/Lumeo",
+    links: [
+      { label: "GitHub", url: "https://github.com/krishpinto/Lumeo" },
+    ],
     skills: [
       "Next.js",
       "Gemini API",
