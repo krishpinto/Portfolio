@@ -59,8 +59,15 @@ export function ProjectItem({
           <div className="flex w-full items-center gap-2 p-4 pr-2">
             <CollapsibleTrigger className="flex flex-1 items-center text-left min-w-0">
               <div className="flex-1 min-w-0">
-                <h3 className="mb-1 leading-snug font-medium text-balance">
+                <h3 className="mb-1 leading-snug font-medium text-balance flex items-center gap-2">
                   {project.title}
+                  {project.isActive && (
+                    <span className="relative flex items-center justify-center">
+                      <span className="absolute inline-flex size-3 animate-ping rounded-full bg-info opacity-50" />
+                      <span className="relative inline-flex size-2 rounded-full bg-info" />
+                      <span className="sr-only">Active Project</span>
+                    </span>
+                  )}
                 </h3>
 
                 <dl className="text-sm text-muted-foreground">

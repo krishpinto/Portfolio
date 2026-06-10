@@ -2,6 +2,35 @@ import type { Project } from "../types/projects"
 
 export const PROJECTS: Project[] = [
   {
+    id: "letterstack",
+    title: "LetterStack",
+    period: {
+      start: "05.2026",
+    },
+    link: "https://github.com/krishpinto/letterstack",
+    links: [
+      { label: "GitHub", url: "https://github.com/krishpinto/letterstack" },
+    ],
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "AWS SES",
+      "QStash",
+      "PostgreSQL",
+      "Node.js",
+      "React",
+    ],
+    description: `Email campaign platform with a paying client — full pipeline from block editor to inbox.
+- Block editor → email-safe HTML renderer with a pixel-accurate preview before send.
+- SES fan-out send pipeline: QStash-queued, idempotent workers, suppression-loop handling for bounces and complaints.
+- 3,000-recipient campaigns dispatched in ~4 minutes.`,
+    badges: [
+      { label: "Live Client", type: "achievement" },
+    ],
+    isExpanded: true,
+    isActive: true,
+  },
+  {
     id: "artemis-cli",
     title: "Artemis CLI",
     period: {

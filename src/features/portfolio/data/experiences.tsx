@@ -9,6 +9,30 @@ import type { Experience } from "../types/experiences"
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "infinity-pool",
+    companyName: "Infinity Pool",
+    positions: [
+      {
+        id: "1",
+        title: "Software Engineering Intern",
+        employmentPeriod: {
+          start: "07.2026",
+        },
+        employmentType: "Full-time",
+        icon: <BriefcaseIcon />,
+        description: `- BE3 — Business Function Agentic Workflows (fintech).
+- Details to follow.`,
+        skills: [
+          "Agentic Workflows",
+          "AI",
+          "Fintech",
+          "TypeScript",
+        ],
+      },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
     id: "svik",
     companyName: "SVIK Infotech",
     companyWebsite: "https://svikinfotech.com",

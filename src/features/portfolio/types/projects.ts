@@ -28,4 +28,6 @@ export type Project = {
   logo?: string
   /** Whether the project card is expanded by default in the UI. */
   isExpanded?: boolean
+  /** Marks an actively in-progress project with the pulsing indicator. */
+  isActive?: boolean
 }
