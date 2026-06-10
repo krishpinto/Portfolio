@@ -14,7 +14,7 @@ export const PROJECTS: Project[] = [
     ],
     copyCommand: "npx artemis-cli",
     badges: [
-      { label: "1,000+ downloads on npm", type: "achievement" },
+      { label: "1,500+ downloads on npm", type: "achievement" },
       { label: "Artemis Cloud — Coming Soon", type: "soon" },
     ],
     skills: [
@@ -124,27 +124,5 @@ export const PROJECTS: Project[] = [
     description: `Interactive quantum circuit simulation platform.
 - Supports 15+ gate operations for real-time circuit construction.
 - Built with Plotly, Cirq, and Next.js for a visual, interactive interface.`,
-  },
-  {
-    id: "cardioedge",
-    title: "CardioEdge",
-    period: {
-      start: "02.2025",
-    },
-    link: "https://github.com/krishpinto",
-    skills: [
-      "PyTorch",
-      "Verilog RTL",
-      "FPGA",
-      "INT8 Quantization",
-      "DSP48E1",
-      "Vivado",
-      "Artix-7",
-    ],
-    description: `Edge AI cardiac inference engine on FPGA — full pipeline from PyTorch to hand-coded Verilog RTL.
-- Trained lightweight 1D-CNN on MIT-BIH Arrhythmia Database (87,554 samples, SMOTE-balanced to 362,355) — 98.31% accuracy across 5 arrhythmia classes.
-- Quantized FP32 → INT8 (875 KB → 218 KB, 4x compression, zero accuracy loss).
-- Complete inference pipeline in hand-coded Verilog RTL (no HLS): mac.v, conv1d_block.v, maxpool1d.v, relu.v, fc_output.v.
-- Validated via Vivado 2025.1 XSim behavioral simulation, bit-exact hardware-software equivalence.`,
   },
 ]

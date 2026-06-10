@@ -18,6 +18,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Junior Software Engineer",
         employmentPeriod: {
           start: "09.2024",
+          end: "06.2026",
         },
         employmentType: "Hybrid",
         icon: <CodeXmlIcon />,
@@ -36,7 +37,6 @@ export const EXPERIENCES: Experience[] = [
         isExpanded: true,
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "bobst",
@@ -52,9 +52,9 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "On-Site",
         icon: <BriefcaseIcon />,
-        description: `- Built enterprise issue-management system using Power Apps, Power Automate, Power BI — digitized manual workflows across 500+ employee branch.
-- Integrated Outlook-based ticket pipelines with escalation tracking, cut manual follow-ups by ~60%.
-- Built Power BI dashboards for issue trends and response metrics, reduced manual reporting by ~4 hrs/week.`,
+        description: `- Built an enterprise issue-management system (Power Apps, Power Automate, Power BI) digitizing manual workflows across a 500+ employee branch.
+- Integrated Outlook-based ticket pipelines with escalation tracking, cutting manual follow-ups ~60%.
+- Built Power BI dashboards for issue trends and response metrics, saving ~4 hrs/week of manual reporting.`,
         skills: [
           "Power Apps",
           "Power Automate",
@@ -78,8 +78,7 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
-        description: `- Developed predictive maintenance system for rotary industrial machinery.
-- Analyzed sensor and operational data to detect early component failure indicators.`,
+        description: `- Developed a predictive maintenance system for rotary industrial machinery, analyzing sensor and operational data to detect early failure indicators (in-house internship, FCRIT).`,
         skills: [
           "Python",
           "PyTorch",
