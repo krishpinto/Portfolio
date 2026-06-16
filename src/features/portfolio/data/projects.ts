@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "09.2024",
     },
-    link: "https://github.com/krishpinto/Lumeo",
+    link: "https://lumeo.krishpinto.co.in/",
     links: [
       { label: "GitHub", url: "https://github.com/krishpinto/Lumeo" },
     ],
