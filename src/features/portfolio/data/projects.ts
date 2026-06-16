@@ -135,23 +135,4 @@ export const PROJECTS: Project[] = [
 - ~70% reduction in manual planning time.
 - ~99.5% uptime via Firebase + Cloudflare.`,
   },
-  {
-    id: "superpos",
-    title: "SuperPOS",
-    period: {
-      start: "06.2024",
-      end: "08.2024",
-    },
-    link: "https://github.com/krishpinto",
-    skills: [
-      "Next.js",
-      "Python",
-      "Cirq",
-      "Plotly",
-      "Quantum Computing",
-    ],
-    description: `Interactive quantum circuit simulation platform.
-- Supports 15+ gate operations for real-time circuit construction.
-- Built with Plotly, Cirq, and Next.js for a visual, interactive interface.`,
-  },
 ]
