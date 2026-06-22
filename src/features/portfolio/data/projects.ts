@@ -31,6 +31,36 @@ export const PROJECTS: Project[] = [
     isActive: true,
   },
   {
+    id: "engram",
+    title: "Engram",
+    period: {
+      start: "06.2026",
+    },
+    link: "https://github.com/krishpinto/engram",
+    links: [
+      { label: "GitHub", url: "https://github.com/krishpinto/engram" },
+    ],
+    skills: [
+      "Rust",
+      "Tauri",
+      "React",
+      "TypeScript",
+      "SQLite",
+      "candle",
+      "three.js",
+      "MCP",
+    ],
+    description: `Passive, local, zero-API memory for AI coding agents — with a 3D desktop app to visualise it.
+- Watches Claude Code transcripts and extracts meaningful moments (decisions, file changes, error fixes) — the agent never participates in the write path.
+- On-device semantic embeddings via candle (all-MiniLM-L6-v2, 384-dim) — no cloud, no API keys, ever.
+- Hybrid search: BM25 keyword + cosine semantic, fused with Reciprocal Rank Fusion.
+- 3D memory graph (react-force-graph-3d + three.js) — orbit, zoom, and fly through a project's decision history.
+- Secret redaction before storage; dual persistence to SQLite + human-readable Markdown.
+- Ships an MCP server so any MCP-capable agent can recall memory automatically.`,
+    isExpanded: true,
+    isActive: true,
+  },
+  {
     id: "artemis-cli",
     title: "Artemis CLI",
     period: {
