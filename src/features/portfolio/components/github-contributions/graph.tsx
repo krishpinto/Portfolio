@@ -9,7 +9,6 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/base/ui/tooltip"
-import type { Activity } from "@/components/kibo-ui/contribution-graph"
 import {
   ContributionGraph,
   ContributionGraphBlock,
@@ -19,19 +18,21 @@ import {
   ContributionGraphTotalCount,
 } from "@/components/kibo-ui/contribution-graph"
 import { GITHUB_USERNAME, UTM_PARAMS } from "@/config/site"
+import type { GitHubContributionsData } from "@/features/portfolio/data/github-contributions"
 import { addQueryParams } from "@/utils/url"
 
 export function GitHubContributionGraph({
   contributions,
 }: {
-  contributions: Promise<Activity[]>
+  contributions: Promise<GitHubContributionsData>
 }) {
-  const data = use(contributions)
+  const { contributions: data, totalCount } = use(contributions)
 
   return (
     <ContributionGraph
       className="mx-auto py-2"
       data={data}
+      totalCount={totalCount}
       blockSize={11}
       blockMargin={3}
       blockRadius={2}
