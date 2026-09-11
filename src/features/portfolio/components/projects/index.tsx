@@ -4,7 +4,8 @@ import { PROJECTS } from "../../data/projects"
 import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "../panel"
 import { ProjectItem } from "./project-item"
 
-export function Projects() {
+/** The scannable home-page section. The long form lives on /projects. */
+export function Projects({ max = 4 }: { max?: number }) {
   return (
     <Panel id="projects">
       <PanelHeader>
@@ -16,7 +17,7 @@ export function Projects() {
 
       <CollapsibleList
         items={PROJECTS}
-        max={4}
+        max={max}
         renderItem={(item) => <ProjectItem project={item} />}
       />
     </Panel>

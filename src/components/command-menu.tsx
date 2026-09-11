@@ -4,7 +4,6 @@ import { useRouter } from "@bprogress/next/app"
 import { useCommandState } from "cmdk"
 import {
   AwardIcon,
-  BookmarkIcon,
   BoxIcon,
   BriefcaseBusinessIcon,
   CircleCheckBigIcon,
@@ -13,7 +12,6 @@ import {
   LayersIcon,
   MoonStarIcon,
   MousePointer2Icon,
-  RssIcon,
   SunMediumIcon,
   TextInitialIcon,
 } from "lucide-react"
@@ -37,9 +35,9 @@ import { trackEvent } from "@/lib/events"
 import { copyToClipboardWithEvent } from "@/utils/copy"
 
 import { ComponentIcon, Icons } from "./icons"
+import { getKPMarkSVG, KrishPintoMark } from "./krishpinto-mark"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
-import { KrishPintoMark, getKPMarkSVG } from "./krishpinto-mark"
 import { Separator } from "./ui/separator"
 
 type CommandLinkItem = {
@@ -64,14 +62,19 @@ const MENU_LINKS: CommandLinkItem[] = [
 
 const PORTFOLIO_LINKS: CommandLinkItem[] = [
   {
-    title: "About",
-    href: "/#about",
-    icon: <TextInitialIcon />,
+    title: "Work",
+    href: "/work",
+    icon: <BriefcaseBusinessIcon />,
   },
   {
-    title: "Tech Stack",
-    href: "/#stack",
-    icon: <LayersIcon />,
+    title: "Projects",
+    href: "/projects",
+    icon: <BoxIcon />,
+  },
+  {
+    title: "Resume",
+    href: "/resume",
+    icon: <CircleCheckBigIcon />,
   },
   {
     title: "Experience",
@@ -89,14 +92,14 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     icon: <AwardIcon />,
   },
   {
-    title: "Certifications",
-    href: "/#certs",
-    icon: <CircleCheckBigIcon />,
+    title: "Tech Stack",
+    href: "/#stack",
+    icon: <LayersIcon />,
   },
   {
-    title: "Bookmarks",
-    href: "/#bookmarks",
-    icon: <BookmarkIcon />,
+    title: "About",
+    href: "/#about",
+    icon: <TextInitialIcon />,
   },
   {
     title: "Download vCard",
@@ -117,12 +120,6 @@ const OTHER_LINK_ITEMS: CommandLinkItem[] = [
     title: "llms.txt",
     href: "/llms.txt",
     icon: <FileTextIcon />,
-    openInNewTab: true,
-  },
-  {
-    title: "RSS Feed",
-    href: "/rss",
-    icon: <RssIcon />,
     openInNewTab: true,
   },
 ]
@@ -229,8 +226,6 @@ export function CommandMenu({
     })
   }, [setIsDuckFollowerVisible])
 
-
-
   return (
     <>
       <CommandMenuTrigger
@@ -262,8 +257,6 @@ export function CommandMenu({
             links={PORTFOLIO_LINKS}
             onLinkSelect={handleOpenLink}
           />
-
-
 
           <CommandLinkGroup
             heading="Social Links"
@@ -478,7 +471,7 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 rounded-b-2xl border-t px-4 text-xs font-medium">
-        <KrishPintoMark className="size-6 text-muted-foreground" />
+        <KrishPintoMark className="h-6 w-auto text-muted-foreground" />
 
         <div className="flex shrink-0 items-center gap-2 max-sm:hidden">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
@@ -496,4 +489,3 @@ function CommandMenuFooter() {
     </>
   )
 }
-
