@@ -11,10 +11,18 @@ import { Collapsible as CollapsibleRoot } from "@/components/base/ui/collapsible
 import { ChevronsUpDown } from "lucide-react"
 import React from "react"
 
-export type ChevronsUpDownIconHandle = { startAnimation: () => void; stopAnimation: () => void }
-export type ChevronsUpDownIconProps = React.ComponentProps<typeof ChevronsUpDown>
+export type ChevronsUpDownIconHandle = {
+  startAnimation: () => void
+  stopAnimation: () => void
+}
+export type ChevronsUpDownIconProps = React.ComponentProps<
+  typeof ChevronsUpDown
+>
 
-export const ChevronsUpDownIcon = React.forwardRef<ChevronsUpDownIconHandle, ChevronsUpDownIconProps>((props, ref) => {
+export const ChevronsUpDownIcon = React.forwardRef<
+  ChevronsUpDownIconHandle,
+  ChevronsUpDownIconProps
+>((props, ref) => {
   React.useImperativeHandle(ref, () => ({
     startAnimation: () => {},
     stopAnimation: () => {},

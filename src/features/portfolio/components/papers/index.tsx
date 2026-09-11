@@ -4,7 +4,7 @@ import { PAPERS } from "../../data/papers"
 import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "../panel"
 import { PaperItem } from "./paper-item"
 
-export function Papers() {
+export function Papers({ max = 5 }: { max?: number }) {
   return (
     <Panel id="papers">
       <PanelHeader>
@@ -16,7 +16,7 @@ export function Papers() {
 
       <CollapsibleList
         items={PAPERS}
-        max={5}
+        max={max}
         keyExtractor={(item) => item.id}
         renderItem={(item) => <PaperItem paper={item} />}
       />

@@ -16,7 +16,8 @@ export const AWARDS: Award[] = [
     title: "Innovex Hackathon @ FCRIT E-Summit",
     date: "2025-03",
     grade: "University",
-    description: "- Hackathon competition at FCRIT's annual E-Summit\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
+    description:
+      "- Hackathon competition at FCRIT's annual E-Summit\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
   },
   {
     id: "sparkathon-2nd",
@@ -24,6 +25,7 @@ export const AWARDS: Award[] = [
     title: "Spark-A-Thon Hackathon @ FCRIT",
     date: "2024-10",
     grade: "University",
-    description: "- Open Innovation domain Hackathon\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
+    description:
+      "- Open Innovation domain Hackathon\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
   },
 ]

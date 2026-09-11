@@ -40,7 +40,7 @@ export const USER: User = {
 - Author of [artemis-cli](https://www.npmjs.com/package/artemis-cli): Kubernetes-native infrastructure CLI — 1,500+ npm downloads
 - Vice Chairperson — AIDL Club, FCRIT | Co-organized [HackQuinox 2.0](https://github.com/krishpinto) (800+ participants, mentored 300+ students)
 `,
-  avatar: "/krish.png",
+  avatar: "/images/avatar.png",
   ogImage: "https://krishpinto.co.in/og.png",
   namePronunciationUrl: undefined,
   timeZone: "Asia/Kolkata",

@@ -15,32 +15,34 @@ export type GitHubContributionsData = {
 export const getGitHubContributions = unstable_cache(
   async (): Promise<GitHubContributionsData> => {
     try {
-      const url = process.env.GITHUB_CONTRIBUTIONS_API_URL || "https://github-contributions-api.jogruber.de";
-      const currentYear = new Date().getFullYear();
+      const url =
+        process.env.GITHUB_CONTRIBUTIONS_API_URL ||
+        "https://github-contributions-api.jogruber.de"
+      const currentYear = new Date().getFullYear()
 
       const [allRes, yearRes] = await Promise.all([
         fetch(`${url}/v4/${GITHUB_USERNAME}?y=all`),
         fetch(`${url}/v4/${GITHUB_USERNAME}?y=${currentYear}`),
-      ]);
+      ])
 
       const allData = allRes.ok
         ? ((await allRes.json()) as GitHubContributionsResponse)
-        : { contributions: [] };
+        : { contributions: [] }
       const yearData = yearRes.ok
         ? ((await yearRes.json()) as GitHubContributionsResponse)
-        : { contributions: [] };
+        : { contributions: [] }
 
       const totalCount = (allData.contributions || []).reduce(
         (sum, activity) => sum + activity.count,
         0
-      );
+      )
 
       return {
         contributions: yearData.contributions || [],
         totalCount,
-      };
+      }
     } catch (e) {
-      return { contributions: [], totalCount: 0 };
+      return { contributions: [], totalCount: 0 }
     }
   },
   ["github-contributions", GITHUB_USERNAME],

@@ -10,11 +10,13 @@ import {
   CollapsibleTrigger,
 } from "@/components/base/ui/collapsible"
 import { Markdown } from "@/components/markdown"
+import { IconTile } from "@/components/ui/icon-tile"
 import { Separator } from "@/components/ui/separator"
-import { Tag } from "@/components/ui/tag"
 import { ProseMono } from "@/components/ui/typography"
 import type { ExperiencePosition } from "@/features/portfolio/types/experiences"
 import { cn } from "@/lib/utils"
+
+import { TechRow } from "../tech-row"
 
 export function ExperiencePositionItem({
   position,
@@ -27,10 +29,15 @@ export function ExperiencePositionItem({
 
   return (
     <Collapsible
-      className="relative last:before:absolute last:before:h-full last:before:w-4 last:before:bg-background"
+      className="group/experience-position relative"
       defaultOpen={position.isExpanded}
       disabled={!position.description}
     >
+      {/* Rounded elbow that turns the vertical rail into the last role. */}
+      <div className="pointer-events-none absolute bottom-0 left-3 hidden size-4 bg-background group-last/experience-position:flex">
+        <span className="size-full -translate-y-2.25 rounded-bl-sm border-b border-l" />
+      </div>
+
       <CollapsibleTrigger
         className={cn(
           "group block w-full text-left",
@@ -39,21 +46,12 @@ export function ExperiencePositionItem({
           "data-disabled:before:content-none"
         )}
       >
-        <div className="relative z-1 mb-1 flex items-center gap-3">
-          <div
-            className={cn(
-              "flex size-6 shrink-0 items-center justify-center rounded-lg",
-              "bg-muted text-muted-foreground",
-              "border border-muted-foreground/15 ring-1 ring-line ring-offset-1 ring-offset-background",
-              "[&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
-            )}
-          >
-            {position.icon ?? <BriefcaseBusinessIcon />}
-          </div>
+        <div className="relative z-1 mb-1 flex items-start gap-3 text-base">
+          <IconTile>{position.icon ?? <BriefcaseBusinessIcon />}</IconTile>
 
           <h4 className="flex-1 font-medium text-balance">{position.title}</h4>
 
-          <div className="shrink-0 text-muted-foreground group-data-disabled:hidden [&_svg]:size-4">
+          <div className="shrink-0 text-muted-foreground group-data-disabled:hidden [&_svg]:h-lh [&_svg]:w-4">
             <CollapsibleChevronsIcon />
           </div>
         </div>
@@ -112,13 +110,7 @@ export function ExperiencePositionItem({
       </CollapsibleContent>
 
       {Array.isArray(position.skills) && position.skills.length > 0 && (
-        <ul className="flex flex-wrap gap-1.5 pt-3 pl-9">
-          {position.skills.map((skill, index) => (
-            <li key={index} className="flex">
-              <Tag>{skill}</Tag>
-            </li>
-          ))}
-        </ul>
+        <TechRow className="pt-3 pl-9" skills={position.skills} />
       )}
     </Collapsible>
   )

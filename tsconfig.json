@@ -38,5 +38,7 @@
   "exclude": [
     "node_modules",
     "./src/__registry__",
+    "reframix",
+    "refchandai", "refethan",
   ]
 }

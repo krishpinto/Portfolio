@@ -1,5 +1,5 @@
 import { Overview } from "@/features/portfolio/components/overview"
-import { ProfileHeader } from "@/features/portfolio/components/profile-header"
+import { ProfileHero } from "@/features/portfolio/components/profile-hero"
 import { cn } from "@/lib/utils"
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
           <div className="flex h-4" />
         </div>
 
-        <ProfileHeader />
+        <ProfileHero />
         <Separator />
 
         <Overview />

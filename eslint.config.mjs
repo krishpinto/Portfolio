@@ -32,6 +32,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local reference clones, not part of this project.
+    "reframix/**",
+    "refchandai/**", "refethan/**",
   ]),
 ]);
 

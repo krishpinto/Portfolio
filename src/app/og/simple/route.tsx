@@ -28,14 +28,27 @@ export async function GET(request: Request) {
         <div tw="absolute top-18 left-18 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 256"
-            width={128}
+            viewBox="0 0 448 256"
+            width={112}
             height={64}
           >
-            <path
-              fill="currentColor"
-              d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
-            />
+            <rect x={0} y={0} width={64} height={64} fill="currentColor" />
+            <rect x={128} y={0} width={64} height={64} fill="currentColor" />
+            <rect x={0} y={64} width={64} height={64} fill="currentColor" />
+            <rect x={64} y={64} width={64} height={64} fill="currentColor" />
+            <rect x={0} y={128} width={64} height={64} fill="currentColor" />
+            <rect x={64} y={128} width={64} height={64} fill="currentColor" />
+            <rect x={0} y={192} width={64} height={64} fill="currentColor" />
+            <rect x={128} y={192} width={64} height={64} fill="currentColor" />
+            <rect x={256} y={0} width={64} height={64} fill="currentColor" />
+            <rect x={320} y={0} width={64} height={64} fill="currentColor" />
+            <rect x={384} y={0} width={64} height={64} fill="currentColor" />
+            <rect x={256} y={64} width={64} height={64} fill="currentColor" />
+            <rect x={384} y={64} width={64} height={64} fill="currentColor" />
+            <rect x={256} y={128} width={64} height={64} fill="currentColor" />
+            <rect x={320} y={128} width={64} height={64} fill="currentColor" />
+            <rect x={384} y={128} width={64} height={64} fill="currentColor" />
+            <rect x={256} y={192} width={64} height={64} fill="currentColor" />
           </svg>
         </div>
 

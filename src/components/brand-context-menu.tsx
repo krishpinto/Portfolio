@@ -23,7 +23,9 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
       <ContextMenuContent className="w-fit">
         <ContextMenuItem
           onClick={() => {
-            const svg = getKPMarkSVG(resolvedTheme === "light" ? "#000" : "#fff")
+            const svg = getKPMarkSVG(
+              resolvedTheme === "light" ? "#000" : "#fff"
+            )
             copyText(svg)
             toast.success("Mark as SVG copied")
           }}

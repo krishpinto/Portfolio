@@ -1,61 +1,10 @@
-"use client"
-
-import { useMotionValueEvent, useScroll } from "motion/react"
-import { usePathname } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
-
-import { cn } from "@/lib/utils"
-
 import { KrishPintoMark } from "./krishpinto-mark"
 
-const calcDistance = (el: HTMLElement) => {
-  const rect = el.getBoundingClientRect()
-  const scrollTop = document.documentElement.scrollTop
-  const headerHeight = 56
-  return scrollTop + rect.top + rect.height - headerHeight
-}
-
-function KrishPintoMarkMotion() {
-  const { scrollY } = useScroll()
-  const [visible, setVisible] = useState(false)
-  const distanceRef = useRef(160)
-
-  useMotionValueEvent(scrollY, "change", (latestValue) => {
-    setVisible(latestValue >= distanceRef.current)
-  })
-
-  useEffect(() => {
-    const coverMark = document.getElementById("js-cover-mark")
-    if (!coverMark) return
-
-    distanceRef.current = calcDistance(coverMark)
-
-    const resizeObserver = new ResizeObserver(() => {
-      distanceRef.current = calcDistance(coverMark)
-    })
-    resizeObserver.observe(coverMark)
-
-    return () => {
-      resizeObserver.disconnect()
-    }
-  }, [])
-
-  return (
-    <div
-      data-visible={visible}
-      className={cn(
-        "group/mark-motion relative flex data-[visible=true]:before:opacity-0",
-        "before:absolute before:inset-0 before:rounded-lg before:border before:border-dashed before:border-line",
-        "before:transition-opacity before:duration-500"
-      )}
-    >
-      <KrishPintoMark className="h-8 w-16 -translate-y-1 opacity-0 transition-[opacity,translate] duration-300 group-data-[visible=true]/mark-motion:translate-y-0 group-data-[visible=true]/mark-motion:opacity-100" />
-    </div>
-  )
-}
-
+/**
+ * The brand mark in the site header. It used to fade in only once you scrolled
+ * past a matching mark in the hero cover. That cover is gone, so the reveal had
+ * nothing to wait for and left an empty dashed box on first paint.
+ */
 export function SiteHeaderMark() {
-  const pathname = usePathname()
-  const isHome = ["/", "/index"].includes(pathname)
-  return isHome ? <KrishPintoMarkMotion /> : <KrishPintoMark />
+  return <KrishPintoMark className="h-8 w-14" />
 }

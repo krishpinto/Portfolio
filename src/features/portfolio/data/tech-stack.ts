@@ -1,8 +1,10 @@
 import type { TechStack } from "../types/tech-stack"
 
 export const TECH_STACK: TechStack[] = [
+  // Language
   {
     key: "typescript",
+    iconKey: "ts",
     title: "TypeScript",
     href: "https://www.typescriptlang.org/",
     categories: ["Language"],
@@ -19,89 +21,96 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.python.org/",
     categories: ["Language"],
   },
-  // {
-  //   key: "php",
-  //   title: "PHP",
-  //   href: "https://www.php.net/",
-  //   categories: ["Language"],
-  // },
+
+  // Runtime
   {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org/",
-    categories: ["Runtime Environment"],
+    categories: ["Runtime"],
   },
+  {
+    key: "bun",
+    title: "Bun",
+    href: "https://bun.sh/",
+    categories: ["Runtime"],
+  },
+
+  // Frontend
   {
     key: "react",
     title: "React",
     href: "https://react.dev/",
-    categories: ["Library", "UI Library"],
+    categories: ["Frontend"],
   },
   {
     key: "nextjs2",
     title: "Next.js",
     href: "https://nextjs.org/",
-    categories: ["Framework"],
-    theme: true,
+    categories: ["Frontend"],
+  },
+  {
+    key: "expo",
+    title: "Expo",
+    href: "https://expo.dev/",
+    categories: ["Frontend"],
   },
   {
     key: "tailwindcss",
     title: "Tailwind CSS",
     href: "https://tailwindcss.com/",
-    categories: ["Framework"],
+    categories: ["Frontend"],
   },
   {
     key: "shadcn-ui",
+    iconKey: "shadcn",
     title: "shadcn/ui",
     href: "https://ui.shadcn.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
+    categories: ["Frontend"],
   },
   {
     key: "radixui",
     title: "Radix UI",
     href: "https://www.radix-ui.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
+    categories: ["Frontend"],
   },
   {
     key: "base-ui",
     title: "Base UI",
     href: "https://base-ui.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
+    categories: ["Frontend"],
   },
   {
     key: "motion",
     title: "Motion",
     href: "https://motion.dev/",
-    categories: ["Library", "Animation"],
+    categories: ["Frontend"],
   },
   {
     key: "tanstack",
     title: "TanStack",
     href: "https://tanstack.com/",
-    categories: ["Library"],
-    theme: true,
+    categories: ["Frontend"],
   },
   {
     key: "react-router",
     title: "React Router",
     href: "https://reactrouter.com/",
-    categories: ["Library", "Navigation"],
-    theme: true,
+    categories: ["Frontend"],
   },
   {
-    key: "git",
-    title: "Git",
-    href: "https://git-scm.com/",
-    categories: ["Version Control"],
+    key: "mobx-state-tree",
+    title: "MobX-State-Tree",
+    href: "https://mobx-state-tree.js.org/",
+    categories: ["Frontend"],
   },
+
+  // Database
   {
-    key: "docker",
-    title: "Docker",
-    href: "https://www.docker.com/",
-    categories: ["Containerization"],
+    key: "postgresql",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    categories: ["Database"],
   },
   {
     key: "mysql",
@@ -121,36 +130,97 @@ export const TECH_STACK: TechStack[] = [
     href: "https://redis.io/",
     categories: ["Database"],
   },
+
+  // Infrastructure
   {
-    key: "figma",
-    title: "Figma",
-    href: "https://www.figma.com/",
-    categories: ["Tools", "Design"],
+    key: "docker",
+    title: "Docker",
+    href: "https://www.docker.com/",
+    categories: ["Infrastructure"],
   },
   {
-    key: "ps",
-    title: "Adobe Photoshop",
-    href: "https://www.adobe.com/vn_en/products/photoshop.html",
-    categories: ["Tools", "Design"],
+    key: "nginx",
+    title: "nginx",
+    href: "https://nginx.org/",
+    categories: ["Infrastructure"],
   },
+  {
+    key: "vercel",
+    title: "Vercel",
+    href: "https://vercel.com/",
+    categories: ["Infrastructure"],
+  },
+  {
+    key: "git",
+    title: "Git",
+    href: "https://git-scm.com/",
+    categories: ["Infrastructure"],
+  },
+  {
+    key: "github",
+    title: "GitHub",
+    href: "https://github.com/",
+    categories: ["Infrastructure"],
+  },
+
+  // Analytics
+  {
+    key: "openpanel",
+    title: "OpenPanel",
+    href: "https://openpanel.dev/",
+    categories: ["Analytics"],
+  },
+  {
+    key: "posthog",
+    title: "PostHog",
+    href: "https://posthog.com/",
+    categories: ["Analytics"],
+  },
+
+  // AI
   {
     key: "claude",
     title: "Claude",
     href: "https://claude.ai/",
-    categories: ["Tools", "AI"],
+    categories: ["AI"],
   },
   {
     key: "cursor",
     title: "Cursor",
     href: "https://cursor.com/",
-    categories: ["Tools", "AI"],
-    theme: true,
+    categories: ["AI"],
   },
   {
     key: "chatgpt",
+    iconKey: "openai",
     title: "ChatGPT",
     href: "https://chatgpt.com/",
-    categories: ["Tools", "AI"],
-    theme: true,
+    categories: ["AI"],
+  },
+  {
+    key: "gemini",
+    title: "Gemini",
+    href: "https://gemini.google.com/",
+    categories: ["AI"],
+  },
+
+  // Design
+  {
+    key: "figma",
+    title: "Figma",
+    href: "https://www.figma.com/",
+    categories: ["Design"],
+  },
+  {
+    key: "ps",
+    title: "Adobe Photoshop",
+    href: "https://www.adobe.com/products/photoshop.html",
+    categories: ["Design"],
+  },
+  {
+    key: "paper",
+    title: "Paper",
+    href: "https://paper.design/",
+    categories: ["Design"],
   },
 ]

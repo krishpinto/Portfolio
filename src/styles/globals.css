@@ -8,6 +8,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
+  --font-handwritten: var(--font-handwritten), cursive;
+  --animate-equalizer: equalizer 900ms ease-in-out infinite alternate;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -65,6 +67,24 @@
 
 @utility screen-line-bottom {
   @apply relative after:absolute after:bottom-0 after:-left-[100vw] after:-z-1 after:h-px after:w-[200vw] after:bg-line;
+}
+
+/**
+ * The technology tile, lifted from Ramx's `.skill-inner-shadow`. The inset
+ * highlight is what stops a flat bordered square from looking like a hole
+ * punched in the page.
+ */
+@utility skill-tile {
+  @apply rounded-md border border-dashed border-black/20 bg-black/5 dark:border-white/30 dark:bg-white/15;
+  box-shadow:
+    inset 0 1px 2px rgb(0 0 0 / 0.08),
+    inset 0 1px 4px rgb(0 0 0 / 0.04);
+}
+
+.dark .skill-tile {
+  box-shadow:
+    inset 0 1px 2px rgb(255 255 255 / 0.06),
+    inset 0 1px 4px rgb(255 255 255 / 0.03);
 }
 
 @utility step {
@@ -519,5 +539,14 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@keyframes equalizer {
+  from {
+    height: 20%;
+  }
+  to {
+    height: 100%;
   }
 }

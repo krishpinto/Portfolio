@@ -1,6 +1,11 @@
+import type { Icons } from "@/components/icons"
+
+/** Name of an inline SVG icon exported from `@/components/icons`. */
+export type SocialIconName = keyof typeof Icons
+
 export type SocialLink = {
-  /** Icon image URL (absolute or path under /public) shown beside the title. */
-  icon: string
+  /** Inline icon to render beside the title. Self-hosted, no external request. */
+  icon: SocialIconName
   title: string
   /** Optional handle/username or subtitle displayed under the title. */
   subtitle?: string

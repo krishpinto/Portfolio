@@ -1,12 +1,14 @@
 import { ArrowUpRightIcon } from "lucide-react"
-import Image from "next/image"
 
+import { Icons } from "@/components/icons"
 import { UTM_PARAMS } from "@/config/site"
 import type { SocialLink } from "@/features/portfolio/types/social-links"
 import { cn } from "@/lib/utils"
 import { addQueryParams } from "@/utils/url"
 
 export function SocialLinkItem({ icon, title, href }: SocialLink) {
+  const Icon = Icons[icon]
+
   return (
     <a
       className={cn(
@@ -18,16 +20,8 @@ export function SocialLinkItem({ icon, title, href }: SocialLink) {
       target="_blank"
       rel="noopener"
     >
-      <div className="relative size-8 shrink-0">
-        <Image
-          className="rounded-lg select-none corner-squircle supports-corner-shape:rounded-[50%]"
-          src={icon}
-          alt={title}
-          width={32}
-          height={32}
-          quality={100}
-          unoptimized
-        />
+      <div className="relative flex size-8 shrink-0 items-center justify-center rounded-lg select-none corner-squircle supports-corner-shape:rounded-[50%]">
+        <Icon className="size-4.5" />
         <div className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-black/10 corner-squircle ring-inset dark:ring-white/15 supports-corner-shape:rounded-[50%]" />
       </div>
 

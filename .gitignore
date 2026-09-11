@@ -43,3 +43,8 @@ next-env.d.ts
 
 # ncdai
 .ncdai
+
+# local reference clones (not mine, never pushed)
+/reframix/
+/refchandai/
+/refethan/
