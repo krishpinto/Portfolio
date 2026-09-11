@@ -1,116 +1,64 @@
-import { RssIcon } from "lucide-react"
-
+import { DitheringBackdrop } from "@/components/dithering-backdrop"
 import { Icons } from "@/components/icons"
-import { SiteFooterInteractiveLogotype } from "@/components/site-footer-brand"
-import { SITE_INFO, SOURCE_CODE_GITHUB_URL } from "@/config/site"
-import { cn } from "@/lib/utils"
+import { SITE_INFO } from "@/config/site"
+import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
+import { USER } from "@/features/portfolio/data/user"
 
 export function SiteFooter() {
   return (
-    <footer className="max-w-screen overflow-x-hidden px-2">
-      <div className="screen-line-top mx-auto border-x border-line pt-4 group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
-        <p className="mb-1 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Inspired by tailwindcss.com / ui.shadcn.com / vercel.com
-        </p>
+    // `isolate` keeps the backdrop's negative z-index inside the footer.
+    // Without it the layer sinks behind the page background and disappears.
+    <footer
+      id="site-footer"
+      className="relative isolate max-w-screen overflow-x-hidden px-2"
+    >
+      {/* Masked so the field fades up out of the page rather than starting on
+          a hard edge under the last section. */}
+      <DitheringBackdrop className="[mask-image:linear-gradient(to_bottom,transparent,black_35%)] opacity-25" />
 
-        <p className="mb-4 px-4 text-center font-mono text-sm text-balance text-muted-foreground">
-          Built by{" "}
-          <a
-            className="link transition-[color] hover:text-foreground"
-            href="https://x.com/krishpinto"
-            target="_blank"
-            rel="noopener"
-          >
-            krishpinto
-          </a>
-          . The source code is available on{" "}
-          <a
-            className="link transition-[color] hover:text-foreground"
-            href={SOURCE_CODE_GITHUB_URL}
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-          .
-        </p>
+      <div className="screen-line-top mx-auto group-has-data-[slot=layout-wide]/layout:container md:max-w-3xl">
+        <div className="flex flex-col-reverse items-center justify-between gap-5 px-4 py-8 sm:flex-row">
+          <p className="font-mono text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} {USER.displayName}. All rights
+            reserved.
+          </p>
 
-        <div className="screen-line-top screen-line-bottom flex w-full before:z-1 after:z-1">
-          <div className="mx-auto flex items-center justify-center gap-3 border-x border-line bg-background px-4">
-            <a
-              className="flex font-mono text-xs font-medium text-muted-foreground transition-[color] hover:text-foreground max-sm:hidden"
-              href={`${SITE_INFO.url}/llms.txt`}
-              target="_blank"
-              rel="noopener"
-            >
-              llms.txt
-            </a>
+          <ul className="flex items-center gap-2">
+            {SOCIAL_LINKS.map(({ icon, title, href }) => {
+              const Icon = Icons[icon as keyof typeof Icons]
 
-            <Separator className="max-sm:hidden" />
+              return (
+                <li key={href} className="flex">
+                  <a
+                    className="flex size-9 items-center justify-center rounded-lg border border-line text-muted-foreground transition-colors hover:border-border hover:text-foreground"
+                    href={href}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {Icon ? <Icon className="size-4" /> : null}
+                    <span className="sr-only">{title}</span>
+                  </a>
+                </li>
+              )
+            })}
 
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://x.com/krishpinto?utm_source=krishpinto.co.in"
-              target="_blank"
-              rel="noopener"
-            >
-              <Icons.x className="size-4" />
-              <span className="sr-only">X</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://github.com/krishpinto?utm_source=krishpinto.co.in"
-              target="_blank"
-              rel="noopener"
-            >
-              <Icons.github className="size-4" />
-              <span className="sr-only">GitHub</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href="https://www.linkedin.com/in/krishpinto?utm_source=krishpinto.co.in"
-              target="_blank"
-              rel="noopener"
-            >
-              <Icons.linkedin className="size-4" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href={`${SITE_INFO.url}/rss`}
-              target="_blank"
-              rel="noopener"
-            >
-              <RssIcon className="size-4" />
-              <span className="sr-only">RSS</span>
-            </a>
-          </div>
-        </div>
-
-        <div className="*:absolute *:z-2 *:flex *:size-2 *:border *:border-line *:bg-background">
-          <div className="bottom-[-3.5px] left-[-4.5px]" />
-          <div className="right-[-4.5px] bottom-[-3.5px]" />
+            <li className="flex">
+              <a
+                className="flex h-9 items-center rounded-lg border border-line px-3 font-mono text-xs text-muted-foreground transition-colors hover:border-border hover:text-foreground"
+                href={`${SITE_INFO.url}/llms.txt`}
+                target="_blank"
+                rel="noopener"
+              >
+                llms.txt
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <SiteFooterInteractiveLogotype />
 
       <div className="pb-[env(safe-area-inset-bottom,0px)]">
         <div className="flex h-16 sm:h-2" />
       </div>
     </footer>
   )
-}
-
-function Separator({ className, ...props }: React.ComponentProps<"div">) {
-  return <div className={cn("flex h-11 w-px bg-line", className)} {...props} />
 }

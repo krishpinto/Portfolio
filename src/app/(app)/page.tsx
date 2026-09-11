@@ -1,16 +1,13 @@
 import type { Metadata } from "next"
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts"
 
-import { About } from "@/features/portfolio/components/about"
 import { Awards } from "@/features/portfolio/components/awards"
-import { Papers } from "@/features/portfolio/components/papers"
-import { Bookmarks } from "@/features/portfolio/components/bookmarks"
-import { Certifications } from "@/features/portfolio/components/certifications"
 import { Experiences } from "@/features/portfolio/components/experiences"
 import { GitHubContributions } from "@/features/portfolio/components/github-contributions"
+import { Now } from "@/features/portfolio/components/now"
 import { Overview } from "@/features/portfolio/components/overview"
-import { ProfileCover } from "@/features/portfolio/components/profile-cover"
-import { ProfileHeader } from "@/features/portfolio/components/profile-header"
+import { Papers } from "@/features/portfolio/components/papers"
+import { ProfileHero } from "@/features/portfolio/components/profile-hero"
 import { Projects } from "@/features/portfolio/components/projects"
 import { SocialLinks } from "@/features/portfolio/components/social-links"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
@@ -34,21 +31,17 @@ export default function Page() {
       />
 
       <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
-        <ProfileCover />
-        <ProfileHeader />
+        <ProfileHero />
         <Separator />
 
         <Overview />
         <SocialLinks />
         <Separator />
 
-        <About />
-        <Separator />
-
         <GitHubContributions />
         <Separator />
 
-        <TechStack />
+        <Now />
         <Separator />
 
         <Experiences />
@@ -63,10 +56,10 @@ export default function Page() {
         <Papers />
         <Separator />
 
-        {/* <Certifications />
-        <Separator /> */}
+        <TechStack />
 
-        {/* <Bookmarks />
+        {/* Hidden. Re-import About from the components folder to bring it back.
+        <About />
         <Separator /> */}
       </div>
     </>
