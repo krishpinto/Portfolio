@@ -1,8 +1,9 @@
 import {
+  BriefcaseIcon,
   CodeXmlIcon,
   GraduationCapIcon,
+  HandshakeIcon,
   LightbulbIcon,
-  BriefcaseIcon,
 } from "lucide-react"
 
 import type { Experience } from "../types/experiences"
@@ -11,60 +12,57 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "infinity-pool",
     companyName: "Infinity Pool",
+    companyLogo: "/images/companies/infinity-pool-mark.svg",
+    companyLogoColor: "#2BA4DC",
     positions: [
       {
         id: "1",
-        title: "Software Engineering Intern",
+        title: "Agentic Workflows for HR & Marketing",
         employmentPeriod: {
-          start: "07.2026",
+          start: "06.2026",
         },
-        employmentType: "Full-time",
-        icon: <BriefcaseIcon />,
-        description: `- BE3 — Business Function Agentic Workflows (fintech).
-- Details to follow.`,
-        skills: [
-          "Agentic Workflows",
-          "AI",
-          "Fintech",
-          "TypeScript",
-        ],
+        employmentType: "Sponsoring BTech Major Project",
+        icon: <HandshakeIcon />,
+        description: `- Infinity Pool has reached out to me and is sponsoring my major project for my Btech Final Year.
+- Agentic workflows automating HR and marketing business functions.`,
+        skills: ["TypeScript", "Claude", "LangGraph", "LangChain", "n8n"],
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "svik",
     companyName: "SVIK Infotech",
+    companyLogo: "/images/companies/svik-mark.svg",
+    companyLogoColor: "#98B829",
+    // The wordmark is set in black, so it needs a plate to survive dark mode.
+    companyLogoBackground: "#ffffff",
     companyWebsite: "https://svikinfotech.com",
+    location: "Mumbai, India",
+    locationType: "On-site",
     positions: [
       {
         id: "1",
         title: "Junior Software Engineer",
         employmentPeriod: {
-          start: "09.2024",
-          end: "06.2026",
+          start: "05.2025",
+          end: "05.2026",
         },
-        employmentType: "Hybrid",
+        employmentType: "Full-time",
         icon: <CodeXmlIcon />,
         description: `- Contributed to an enterprise project management platform using React, .NET, PostgreSQL — supporting 5+ concurrent dev teams.
 - Implemented Kanban boards, role-based team management, and workflow tracking.
 - Built backend APIs for context-aware project monitoring, reduced query response time by ~40%.`,
-        skills: [
-          "React",
-          ".NET",
-          "PostgreSQL",
-          "TypeScript",
-          "Kanban",
-          "REST APIs",
-          "Agile",
-        ],
-        isExpanded: true,
+        skills: ["React", ".NET", "PostgreSQL", "TypeScript"],
       },
     ],
   },
   {
     id: "bobst",
     companyName: "BOBST India Pvt Ltd",
+    companyLogo: "/images/companies/bobst-mark.svg",
+    companyLogoColor: "#DB0720",
+    location: "Mumbai, India",
+    locationType: "Hybrid",
     companyWebsite: "https://www.bobst.com",
     positions: [
       {
@@ -74,7 +72,7 @@ export const EXPERIENCES: Experience[] = [
           start: "06.2025",
           end: "08.2025",
         },
-        employmentType: "On-Site",
+        employmentType: "Internship",
         icon: <BriefcaseIcon />,
         description: `- Built an enterprise issue-management system (Power Apps, Power Automate, Power BI) digitizing manual workflows across a 500+ employee branch.
 - Integrated Outlook-based ticket pipelines with escalation tracking, cutting manual follow-ups ~60%.
@@ -83,8 +81,8 @@ export const EXPERIENCES: Experience[] = [
           "Power Apps",
           "Power Automate",
           "Power BI",
+          "SharePoint",
           "Microsoft 365",
-          "Process Automation",
         ],
       },
     ],
@@ -103,13 +101,7 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
         description: `- Developed a predictive maintenance system for rotary industrial machinery, analyzing sensor and operational data to detect early failure indicators (in-house internship, FCRIT).`,
-        skills: [
-          "Python",
-          "PyTorch",
-          "Signal Processing",
-          "Predictive Analytics",
-          "Research",
-        ],
+        skills: ["Python", "PyTorch"],
       },
     ],
   },
@@ -130,14 +122,6 @@ export const EXPERIENCES: Experience[] = [
 - Co-organized HackQuinox 2.0 — 800+ participants, mentored 300+ students.
 - Co-authored research paper on AI-assisted clinical reasoning — 1st Place, poster competition, Delhi.
 - NSS Volunteer.`,
-        skills: [
-          "Computer Engineering",
-          "AI/ML",
-          "Leadership",
-          "Event Management",
-          "Research",
-        ],
-        isExpanded: true,
       },
     ],
   },
