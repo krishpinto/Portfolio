@@ -2,7 +2,6 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 
 import { DesktopNav } from "@/components/desktop-nav"
-import { NavItemGitHub } from "@/components/nav-item-github"
 import { SiteHeaderMark } from "@/components/site-header-mark"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Separator } from "@/components/ui/separator"
@@ -36,13 +35,12 @@ export function SiteHeader() {
             </Link>
           </BrandContextMenu>
 
-          <div className="flex-1" />
-
           <DesktopNav items={MAIN_NAV} />
+
+          <div className="flex-1" />
 
           <div className="flex items-center *:first:mr-2 max-sm:*:data-[slot=command-menu-trigger]:hidden">
             <CommandMenu enabledHotkeys />
-            <NavItemGitHub />
             <Separator
               orientation="vertical"
               className="mx-2 data-vertical:h-4 data-vertical:self-center"
