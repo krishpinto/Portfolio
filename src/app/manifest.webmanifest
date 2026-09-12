@@ -1,11 +1,39 @@
 {
   "short_name": "Krish Pinto",
-  "name": "Krish Pinto",
+  "name": "Krish Pinto — Full-Stack & AI Engineer",
   "description": "Full-Stack & AI Engineer. Building things that matter.",
-  "icons": [],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
   "id": "/?utm_source=pwa",
   "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "scope": "/",
-  "screenshots": []
+  "theme_color": "#09090b",
+  "background_color": "#09090b",
+  "categories": ["portfolio", "productivity"]
 }
