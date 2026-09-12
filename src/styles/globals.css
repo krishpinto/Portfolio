@@ -307,20 +307,24 @@
     text-rendering: optimizeLegibility;
   }
 
-  /* Custom scrollbar styling. Thanks @shadcn-ui */
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 5px;
-  }
+  /*
+   * Scrollbars, via the standard properties only.
+   *
+   * There used to be a `::-webkit-scrollbar` block here as well. The two do
+   * not compose: once `scrollbar-width` or `scrollbar-color` is set to
+   * anything but `auto`, Chrome ignores the pseudo-element rules entirely, so
+   * the widths disagreed between engines and the WebKit half was dead code in
+   * the browser it was written for.
+   */
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--border) transparent;
+  }
+
+  html {
+    /* Reserve the gutter permanently, so moving between a page that scrolls
+       and one that does not cannot shift the layout sideways. */
+    scrollbar-gutter: stable;
   }
 
   [id] {

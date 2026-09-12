@@ -10,7 +10,7 @@ export function SiteFooter() {
     // Without it the layer sinks behind the page background and disappears.
     <footer
       id="site-footer"
-      className="relative isolate max-w-screen overflow-x-hidden px-2"
+      className="relative isolate max-w-screen overflow-x-clip px-2"
     >
       {/* Masked so the field fades up out of the page rather than starting on
           a hard edge under the last section. */}
