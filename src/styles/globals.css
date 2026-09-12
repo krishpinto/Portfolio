@@ -550,3 +550,50 @@
     height: 100%;
   }
 }
+
+/* Entrance animation.
+ *
+ * Two variants. `animate-in-up` fires the moment the element paints, for
+ * anything already above the fold. `animate-in-up-on-view` starts hidden and
+ * waits for the Reveal component to add `.in-view` from an IntersectionObserver,
+ * so a section lower down animates when you reach it rather than playing to an
+ * empty screen while you are still at the top.
+ *
+ * Stagger comes from an inline animation-delay on each child, so a group reads
+ * as a sequence instead of one block appearing all at once.
+ */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-in-up {
+  animation: fade-in-up 350ms ease-out both;
+}
+
+@utility animate-in-up-on-view {
+  opacity: 0;
+  transform: translateY(16px);
+
+  &.in-view {
+    animation: fade-in-up 350ms ease-out both;
+  }
+}
+
+/* Motion is decoration here, never the thing that makes content readable.
+ * Anyone who has asked the OS for less of it gets the content, immediately. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-in-up,
+  .animate-in-up-on-view,
+  .animate-in-up-on-view.in-view {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

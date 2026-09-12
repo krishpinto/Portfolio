@@ -1,14 +1,14 @@
-import { ArrowUpRightIcon, DownloadIcon, FileTextIcon } from "lucide-react"
+import { ArrowUpRightIcon, FileTextIcon } from "lucide-react"
 import type { Metadata } from "next"
 
-import { Button } from "@/components/ui/button"
-import { RESUME_DOWNLOAD_URL, RESUME_URL } from "@/config/site"
+import { Reveal } from "@/components/reveal"
 import {
   Panel,
   PanelContent,
   PanelHeader,
   PanelTitle,
 } from "@/features/portfolio/components/panel"
+import { ResumeDownloadButton } from "@/features/portfolio/components/resume/resume-download-button"
 import { ResumeViewer } from "@/features/portfolio/components/resume/resume-viewer"
 import { SectionSeparator } from "@/features/portfolio/components/section-separator"
 import { USER } from "@/features/portfolio/data/user"
@@ -38,60 +38,51 @@ const CERTIFICATES = [
 
 export default function ResumePage() {
   return (
-    <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
-      <Panel className="px-4 py-12 sm:py-16">
-        <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          Resume
-        </h1>
-      </Panel>
+    <div className="mx-auto md:max-w-3xl **:[[id]]:scroll-mt-22">
+      <Reveal immediate>
+        <Panel className="relative px-4 py-12 sm:py-16">
+          <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+            Resume
+          </h1>
 
-      <Panel id="resume">
-        <PanelContent className="flex flex-wrap gap-3">
-          <Button className="font-mono" variant="default" asChild>
-            <a href={RESUME_URL} target="_blank" rel="noopener">
-              <FileTextIcon />
-              Open in Drive
-              <ArrowUpRightIcon />
-            </a>
-          </Button>
+          <ResumeDownloadButton className="absolute right-3 bottom-3 sm:right-4 sm:bottom-4" />
+        </Panel>
+      </Reveal>
 
-          <Button className="font-mono" variant="outline" asChild>
-            <a href={RESUME_DOWNLOAD_URL} target="_blank" rel="noopener">
-              <DownloadIcon />
-              Download PDF
-            </a>
-          </Button>
-        </PanelContent>
-
-        <ResumeViewer className="screen-line-top" />
-      </Panel>
+      <Reveal immediate delay={90}>
+        <Panel id="resume">
+          <ResumeViewer className="screen-line-top" />
+        </Panel>
+      </Reveal>
 
       <SectionSeparator />
 
-      <Panel id="certificates">
-        <PanelHeader>
-          <PanelTitle>Certificates</PanelTitle>
-        </PanelHeader>
+      <Reveal>
+        <Panel id="certificates">
+          <PanelHeader>
+            <PanelTitle>Certificates</PanelTitle>
+          </PanelHeader>
 
-        <PanelContent className="p-0">
-          <ul>
-            {CERTIFICATES.map((certificate) => (
-              <li key={certificate.href}>
-                <a
-                  className="screen-line-bottom flex items-center gap-4 p-4 transition-[background-color] ease-out hover:bg-accent-muted"
-                  href={certificate.href}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <FileTextIcon className="size-4 shrink-0 text-muted-foreground" />
-                  <span className="flex-1 text-sm">{certificate.title}</span>
-                  <ArrowUpRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </PanelContent>
-      </Panel>
+          <PanelContent className="p-0">
+            <ul>
+              {CERTIFICATES.map((certificate) => (
+                <li key={certificate.href}>
+                  <a
+                    className="screen-line-bottom flex items-center gap-4 p-4 transition-[background-color] ease-out hover:bg-accent-muted"
+                    href={certificate.href}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <FileTextIcon className="size-4 shrink-0 text-muted-foreground" />
+                    <span className="flex-1 text-sm">{certificate.title}</span>
+                    <ArrowUpRightIcon className="size-4 shrink-0 text-muted-foreground" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </PanelContent>
+        </Panel>
+      </Reveal>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts"
 
+import { Reveal } from "@/components/reveal"
 import { SITE_INFO } from "@/config/site"
 import { Awards } from "@/features/portfolio/components/awards"
 import { Experiences } from "@/features/portfolio/components/experiences"
@@ -36,33 +37,59 @@ export default function Page() {
         }}
       />
 
-      <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
-        <ProfileHero />
-        <Separator />
+      {/* `**:` rather than `*:` because each section now sits inside a Reveal
+          wrapper, so the element carrying the id is a grandchild. */}
+      <div className="mx-auto md:max-w-3xl **:[[id]]:scroll-mt-22">
+        {/* The first screenful animates on paint, not on hydration, so none of
+            it is waiting for JavaScript. Three steps, 90ms apart. */}
+        <Reveal immediate>
+          <ProfileHero />
+          <Separator />
+        </Reveal>
 
-        <Overview />
-        <SocialLinks />
-        <Separator />
+        <Reveal immediate delay={90}>
+          <Overview />
+        </Reveal>
 
-        <GitHubContributions />
-        <Separator />
+        <Reveal immediate delay={180}>
+          <SocialLinks />
+          <Separator />
+        </Reveal>
 
-        <Now />
-        <Separator />
+        {/* Below the fold each section waits until you scroll to it. */}
+        <Reveal>
+          <GitHubContributions />
+          <Separator />
+        </Reveal>
 
-        <Experiences />
-        <Separator />
+        <Reveal>
+          <Now />
+          <Separator />
+        </Reveal>
 
-        <Projects />
-        <Separator />
+        <Reveal>
+          <Experiences />
+          <Separator />
+        </Reveal>
 
-        <Awards />
-        <Separator />
+        <Reveal>
+          <Projects />
+          <Separator />
+        </Reveal>
 
-        <Papers />
-        <Separator />
+        <Reveal>
+          <Awards />
+          <Separator />
+        </Reveal>
 
-        <TechStack />
+        <Reveal>
+          <Papers />
+          <Separator />
+        </Reveal>
+
+        <Reveal>
+          <TechStack />
+        </Reveal>
 
         {/* Hidden. Re-import About from the components folder to bring it back.
         <About />

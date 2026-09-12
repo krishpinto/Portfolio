@@ -117,6 +117,12 @@ export default function RootLayout({
           since we found the regular `<script>` tag to not execute when rendering a not-found page.
          */}
         <Script src={`data:text/javascript;base64,${btoa(darkModeScript)}`} />
+        {/* The scroll-triggered reveals start hidden and are un-hidden by an
+            observer. With no JavaScript there is no observer, so hand those
+            elements straight to the reader. */}
+        <noscript>
+          <style>{`.animate-in-up-on-view{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
