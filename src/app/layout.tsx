@@ -1,6 +1,5 @@
 import "@/styles/globals.css"
 
-import { GoogleTagManager } from "@next/third-parties/google"
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
@@ -130,10 +129,6 @@ export default function RootLayout({
           }}
         />
       </head>
-
-      {process.env.NEXT_PUBLIC_GTM_ID && (
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
-      )}
 
       <body>
         <Providers>
