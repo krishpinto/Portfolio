@@ -1,4 +1,4 @@
-import { RESUME_EMBED_URL, RESUME_URL } from "@/config/site"
+import { RESUME_PREVIEW_URL, RESUME_URL } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
 
@@ -19,25 +19,22 @@ export function ResumeViewer({ className }: { className?: string }) {
         <CornerPlus corner="bottom-right" />
 
         {/*
-          A4 is 1:√2, so the frame matches the document instead of cropping it.
-
-          Drive's viewer paints its own scrollbar inside the iframe. That
-          document is cross-origin, so the bar cannot be restyled or hidden
-          from out here, and next to the page's own scrollbar it read as a
-          second one. Instead the frame clips and the iframe is made wider
-          than it, which pushes the bar past the clip on the right. The extra
-          width is split evenly so the page stays centred, and the wheel still
-          scrolls the document.
+          Drive renders the page at a true A4 ratio, so width and height are
+          declared from what it actually returns and the frame reserves the
+          right box before the image arrives.
         */}
-        <div className="relative aspect-[1/1.414] overflow-clip">
-          <iframe
-            className="absolute inset-y-0 left-1/2 w-[calc(100%+2rem)] -translate-x-1/2"
-            src={RESUME_EMBED_URL}
-            title={`${USER.displayName} — résumé`}
-            loading="lazy"
-            allow="autoplay"
-          />
-        </div>
+        <img
+          className="block w-full"
+          src={RESUME_PREVIEW_URL}
+          alt={`Preview of the first page of ${USER.displayName}'s résumé`}
+          width={1024}
+          height={1449}
+          loading="lazy"
+          decoding="async"
+          /* Drive serves these off a different host and has been known to
+             refuse on referrer; there is nothing here worth leaking anyway. */
+          referrerPolicy="no-referrer"
+        />
       </div>
 
       <p className="relative mt-4 text-center font-mono text-xs text-muted-foreground">

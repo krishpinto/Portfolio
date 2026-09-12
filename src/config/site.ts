@@ -39,8 +39,20 @@ const RESUME_FILE_ID = "1u9kG_uzFpHRp1kyVMu-3hpi0COlcopdK"
 /** Drive's viewer page. This is the link to hand to anyone asking for the CV. */
 export const RESUME_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/view`
 
-/** Drive refuses to render `/view` in a frame, so the embed needs `/preview`. */
-export const RESUME_EMBED_URL = `https://drive.google.com/file/d/${RESUME_FILE_ID}/preview`
+/**
+ * A flat PNG of the document, rendered by Drive and regenerated when the file
+ * changes, so the preview follows a new revision without a deploy.
+ *
+ * This replaced an embedded `/preview` iframe. Drive's viewer sized its own
+ * viewport slightly shorter than the page, so it scrolled internally: a second
+ * scrollbar next to the page's own, and a résumé that appeared cut off. The
+ * height its viewer wants cannot be measured from outside a cross-origin
+ * frame, so it was guesswork either way. An image has no such opinion.
+ *
+ * Drive caps this render at 1024px wide whatever size is asked for. Fine for a
+ * preview sitting next to a download button; not a substitute for the file.
+ */
+export const RESUME_PREVIEW_URL = `https://drive.google.com/thumbnail?id=${RESUME_FILE_ID}&sz=w1600`
 
 /** Saves the file straight to disk instead of opening Drive's viewer. */
 export const RESUME_DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`
