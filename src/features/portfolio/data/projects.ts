@@ -9,6 +9,7 @@ export const PROJECTS: Project[] = [
     },
     link: "https://letterstack.site/",
     logo: "/images/projects/letterstack.png",
+    cover: "/images/projects/letterstack-cover.webp",
     logoColor: "#6C5CD6",
     skills: [
       "Next.js",
@@ -81,8 +82,8 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: "engram",
-    title: "Engram",
+    id: "Grasp",
+    title: "Grasp",
     period: {
       start: "06.2026",
     },
