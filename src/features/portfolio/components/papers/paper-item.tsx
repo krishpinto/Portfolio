@@ -1,5 +1,3 @@
-"use client"
-
 import { format } from "date-fns"
 import { ExternalLinkIcon, ScrollTextIcon } from "lucide-react"
 
@@ -38,8 +36,8 @@ export function PaperItem({
           <ScrollTextIcon className="pointer-events-none size-4 text-muted-foreground" />
         </div>
 
-        <div className="flex-1 border-l border-dashed border-line">
-          <CollapsibleTrigger className="flex w-full items-center gap-2 p-4 pr-2 text-left">
+        <div className="flex flex-1 items-center gap-2 border-l border-dashed border-line pr-2">
+          <CollapsibleTrigger className="flex min-w-0 flex-1 items-center gap-2 p-4 pr-0 text-left">
             <div className="flex-1">
               <h3 className="mb-1 leading-snug font-medium text-balance">
                 {paper.title}
@@ -67,32 +65,31 @@ export function PaperItem({
               </div>
             </div>
 
-            <Tooltip>
-              <TooltipTrigger
-                render={
-                  <a
-                    className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
-                    href={paper.url}
-                    target="_blank"
-                    rel="noopener"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ExternalLinkIcon className="pointer-events-none size-4" />
-                    <span className="sr-only">Open Paper</span>
-                  </a>
-                }
-              />
-              <TooltipContent>
-                <p>Open Paper</p>
-              </TooltipContent>
-            </Tooltip>
-
             {canExpand && (
               <div className="shrink-0 text-muted-foreground [&_svg]:size-4">
                 <CollapsibleChevronsIcon />
               </div>
             )}
           </CollapsibleTrigger>
+
+          <Tooltip>
+            <TooltipTrigger
+              render={
+                <a
+                  className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                  href={paper.url}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <ExternalLinkIcon className="pointer-events-none size-4" />
+                  <span className="sr-only">Open Paper</span>
+                </a>
+              }
+            />
+            <TooltipContent>
+              <p>Open Paper</p>
+            </TooltipContent>
+          </Tooltip>
         </div>
       </div>
 
