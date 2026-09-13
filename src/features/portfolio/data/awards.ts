@@ -9,6 +9,12 @@ export const AWARDS: Award[] = [
     grade: "University",
     description:
       "- 1700+ participants\n- Project: Sentinel — On-Device Android Scam Detection System",
+    referenceLink: "/documents/certificates/hack4innovation.pdf",
+    image: {
+      src: "/images/certificates/hack4innovation.webp",
+      width: 1600,
+      height: 1100,
+    },
   },
   {
     id: "innovex-1st",
@@ -18,6 +24,12 @@ export const AWARDS: Award[] = [
     grade: "University",
     description:
       "- Hackathon competition at FCRIT's annual E-Summit\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
+    referenceLink: "/documents/certificates/innovex.pdf",
+    image: {
+      src: "/images/certificates/innovex.webp",
+      width: 1596,
+      height: 1190,
+    },
   },
   {
     id: "sparkathon-2nd",
@@ -27,5 +39,11 @@ export const AWARDS: Award[] = [
     grade: "University",
     description:
       "- Open Innovation domain Hackathon\n- Organized by IIC & E-Cell, Fr. C. Rodrigues Institute of Technology",
+    referenceLink: "/documents/certificates/sparkathon.pdf",
+    image: {
+      src: "/images/certificates/sparkathon.webp",
+      width: 1600,
+      height: 1150,
+    },
   },
 ]

@@ -1,5 +1,6 @@
 import { format } from "date-fns"
-import { AwardIcon, FileCheckIcon } from "lucide-react"
+import { ArrowUpRightIcon, AwardIcon, FileCheckIcon } from "lucide-react"
+import Image from "next/image"
 
 import {
   Collapsible,
@@ -27,7 +28,7 @@ export function AwardItem({
   className?: string
   award: Award
 }) {
-  const canExpand = !!award.description
+  const canExpand = !!award.description || !!award.image
 
   return (
     <Collapsible className={className} disabled={!canExpand}>
@@ -107,11 +108,63 @@ export function AwardItem({
 
       {canExpand && (
         <CollapsibleContent className="overflow-hidden">
-          <ProseMono className="border-t border-line p-4">
-            <Markdown>{award.description}</Markdown>
-          </ProseMono>
+          <div className="space-y-4 border-t border-line p-4">
+            {award.description && (
+              <ProseMono>
+                <Markdown>{award.description}</Markdown>
+              </ProseMono>
+            )}
+
+            {award.image && (
+              <CertificateImage
+                image={award.image}
+                title={award.title}
+                href={award.referenceLink}
+              />
+            )}
+          </div>
         </CollapsibleContent>
       )}
     </Collapsible>
+  )
+}
+
+/**
+ * The certificate itself, so opening a row shows the proof rather than only
+ * describing it. The picture links through to the original PDF.
+ */
+function CertificateImage({
+  image,
+  title,
+  href,
+}: {
+  image: NonNullable<Award["image"]>
+  title: string
+  href?: string
+}) {
+  const picture = (
+    <Image
+      className="w-full transition-transform duration-500 ease-out group-hover/certificate:scale-[1.02]"
+      src={image.src}
+      alt={`Certificate for ${title}`}
+      width={image.width}
+      height={image.height}
+      sizes="(min-width: 768px) 700px, 100vw"
+    />
+  )
+
+  const frame =
+    "group/certificate relative block overflow-hidden rounded-lg border border-line bg-muted"
+
+  if (!href) return <div className={frame}>{picture}</div>
+
+  return (
+    <a className={frame} href={href} target="_blank" rel="noopener">
+      {picture}
+      <span className="absolute top-2 right-2 flex items-center gap-1 rounded-md bg-background/85 px-2 py-1 font-mono text-xs text-muted-foreground opacity-0 backdrop-blur-sm transition-opacity group-hover/certificate:opacity-100 group-focus-visible/certificate:opacity-100">
+        Open PDF
+        <ArrowUpRightIcon className="size-3.5" />
+      </span>
+    </a>
   )
 }

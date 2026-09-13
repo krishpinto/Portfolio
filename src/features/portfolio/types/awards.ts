@@ -15,4 +15,13 @@ export type Award = {
   description?: string
   /** Optional URL to certificate, announcement, or reference material. */
   referenceLink?: string
+  /**
+   * Picture of the certificate, shown when the row is opened. Dimensions are
+   * stored with it so the frame holds its shape before the image loads.
+   */
+  image?: {
+    src: string
+    width: number
+    height: number
+  }
 }

@@ -1,16 +1,16 @@
-import { ArrowUpRightIcon, FileTextIcon } from "lucide-react"
 import type { Metadata } from "next"
 
 import { Reveal } from "@/components/reveal"
+import { AwardItem } from "@/features/portfolio/components/awards/award-item"
 import {
   Panel,
-  PanelContent,
   PanelHeader,
   PanelTitle,
 } from "@/features/portfolio/components/panel"
 import { ResumeDownloadButton } from "@/features/portfolio/components/resume/resume-download-button"
 import { ResumeViewer } from "@/features/portfolio/components/resume/resume-viewer"
 import { SectionSeparator } from "@/features/portfolio/components/section-separator"
+import { AWARDS } from "@/features/portfolio/data/awards"
 import { USER } from "@/features/portfolio/data/user"
 
 export const metadata: Metadata = {
@@ -20,21 +20,6 @@ export const metadata: Metadata = {
     canonical: "/resume",
   },
 }
-
-const CERTIFICATES = [
-  {
-    title: "1st Place — Hack4Innovation @ VesIT",
-    href: "/documents/certificates/hack4innovation.pdf",
-  },
-  {
-    title: "1st Place — Innovex Hackathon @ FCRIT E-Summit",
-    href: "/documents/certificates/innovex.pdf",
-  },
-  {
-    title: "2nd Place — Spark-A-Thon @ FCRIT",
-    href: "/documents/certificates/sparkathon.pdf",
-  },
-]
 
 export default function ResumePage() {
   return (
@@ -63,24 +48,15 @@ export default function ResumePage() {
             <PanelTitle>Certificates</PanelTitle>
           </PanelHeader>
 
-          <PanelContent className="p-0">
-            <ul>
-              {CERTIFICATES.map((certificate) => (
-                <li key={certificate.href}>
-                  <a
-                    className="screen-line-bottom flex items-center gap-4 p-4 transition-[background-color] ease-out hover:bg-accent-muted"
-                    href={certificate.href}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <FileTextIcon className="size-4 shrink-0 text-muted-foreground" />
-                    <span className="flex-1 text-sm">{certificate.title}</span>
-                    <ArrowUpRightIcon className="size-4 shrink-0 text-muted-foreground" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </PanelContent>
+          {/* The same rows as Honors & Awards on the home page, so each one
+              opens to the certificate itself instead of a bare PDF link. */}
+          <ul>
+            {AWARDS.map((award) => (
+              <li key={award.id} className="border-b border-line">
+                <AwardItem award={award} />
+              </li>
+            ))}
+          </ul>
         </Panel>
       </Reveal>
     </div>
