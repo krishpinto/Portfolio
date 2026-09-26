@@ -1,72 +1,58 @@
-# Krish Pinto — Portfolio
+# krishpinto.co.in
 
-[![Live](https://img.shields.io/badge/live-krishpinto.co.in-09090b)](https://krishpinto.co.in)
-[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+My portfolio. Live at [krishpinto.co.in](https://krishpinto.co.in).
 
-> A minimal, pixel-perfect portfolio for a Full-Stack & AI Engineer — fast, accessible, and built to feel like a product, not a page.
+Nothing clever going on. It's a Next.js app where every section reads from a
+typed data file, so adding a project or a paper is editing one object instead of
+writing markup.
 
-This is my personal corner of the internet at **[krishpinto.co.in](https://krishpinto.co.in)**. It collects what I've built, shipped, and won — projects, research papers, experience, awards, and certifications — in one clean, themeable, SEO-tuned site.
+## Running it
 
-Every section is data-driven: the whole portfolio renders from typed config files, so adding a project or paper is a one-object edit, not a markup rewrite.
-
-<p align="center">
-  <img src="public/krish.png" alt="Krish Pinto" width="160" />
-</p>
-
-## Highlights
-
-- **Pixel-perfect, minimal design** — light/dark themes with `next-themes`, Geist type, and Tailwind v4.
-- **Data-driven sections** — projects, research papers, experience, awards, certifications, tech stack, testimonials, and bookmarks all live as typed data.
-- **vCard integration** — download my contact card straight from the site.
-- **SEO & social ready** — dynamic OG images, sitemap, robots, structured data (`schema-dts`), and a web manifest.
-- **Accessible & fast** — keyboard-friendly, `sharp`-optimized images, and a `/llms` route for AI crawlers.
-- **Privacy-first analytics** — consent-managed, with a public [privacy policy](./PRIVACY_POLICY.md).
-
-## What's inside
-
-| Section        | Source |
-| -------------- | ------ |
-| Profile / bio  | `src/features/portfolio/data/user.ts` |
-| Projects       | `src/features/portfolio/data/projects.ts` |
-| Research papers| `src/features/portfolio/data/papers.ts` |
-| Experience     | `src/features/portfolio/data/experiences.tsx` |
-| Awards         | `src/features/portfolio/data/awards.ts` |
-| Certifications | `src/features/portfolio/data/certifications.ts` |
-| Tech stack     | `src/features/portfolio/data/tech-stack.ts` |
-| Testimonials   | `src/features/portfolio/data/testimonials.ts` |
-| Bookmarks      | `src/features/portfolio/data/bookmarks.ts` |
-
-## Tech stack
-
-- **Framework** — [Next.js 16](https://nextjs.org) (App Router, React 19)
-- **Styling** — [Tailwind CSS v4](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com)
-- **Animation** — [Motion](https://motion.dev)
-- **Content** — MDX via `next-mdx-remote` + the `fumadocs` toolchain
-- **Tooling** — TypeScript, ESLint, Prettier, pnpm
-
-## Development
-
-Requires Node `22.x` and pnpm `>=9`.
+Needs Node 22 and pnpm.
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see it.
+Then open http://localhost:3000.
+
+Other scripts you'll want:
 
 ```bash
-pnpm build        # production build
-pnpm lint         # lint
-pnpm check-types  # type-check
-pnpm format:write # format
+pnpm build
+pnpm lint
+pnpm check-types
+pnpm format:write
 ```
 
-## Acknowledgements
+## Where things live
 
-Built on the excellent open-source portfolio foundation by [Nguyen Chanh Dai (chanhdai.com)](https://github.com/ncdai/chanhdai.com), then reshaped and extended into my own.
+Content is all in `src/features/portfolio/data/`, one file per section.
+`user.ts` has the bio and contact details, then `projects.ts`, `papers.ts`,
+`experiences.tsx`, `awards.ts` and `tech-stack.ts` do what they sound like.
+Edit those and the pages follow.
+
+Components sit in `src/components` and `src/features/portfolio/components`.
+Styling is Tailwind v4 and the theme tokens are all in
+`src/styles/globals.css`.
+
+There are two generator scripts in `src/scripts/`. One builds the technology
+icon set from a few sources, the other makes the printable QR code. Neither
+runs as part of the build, so run them by hand when you need to.
+
+A couple of things worth knowing if you poke around. The email and phone in
+`user.ts` are base64 so scrapers can't lift them out of the HTML, and they get
+decoded in the browser. The resume preview is an image Google Drive renders
+from the PDF, which means updating the resume doesn't need a deploy.
+
+## Built on
+
+Started from [Nguyen Chanh Dai's portfolio](https://github.com/ncdai/chanhdai.com)
+and has drifted a long way from it since. His layout work is good and worth a
+look on its own.
 
 ## License
 
-[MIT](./LICENSE) — feel free to learn from it. If you fork it, please make it your own.
+MIT, see [LICENSE](./LICENSE). Take whatever's useful. If you fork it, put your
+own name on it.
