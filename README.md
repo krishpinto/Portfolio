@@ -2,10 +2,6 @@
 
 My portfolio. Live at [krishpinto.co.in](https://krishpinto.co.in).
 
-Nothing clever going on. It's a Next.js app where every section reads from a
-typed data file, so adding a project or a paper is editing one object instead of
-writing markup.
-
 ## Running it
 
 Needs Node 22 and pnpm.
@@ -45,12 +41,6 @@ A couple of things worth knowing if you poke around. The email and phone in
 `user.ts` are base64 so scrapers can't lift them out of the HTML, and they get
 decoded in the browser. The resume preview is an image Google Drive renders
 from the PDF, which means updating the resume doesn't need a deploy.
-
-## Built on
-
-Started from [Nguyen Chanh Dai's portfolio](https://github.com/ncdai/chanhdai.com)
-and has drifted a long way from it since. His layout work is good and worth a
-look on its own.
 
 ## License
 
