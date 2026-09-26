@@ -12,8 +12,8 @@ import {
   LayersIcon,
   MoonStarIcon,
   MousePointer2Icon,
+  ScrollTextIcon,
   SunMediumIcon,
-  TextInitialIcon,
 } from "lucide-react"
 import { useTheme } from "next-themes"
 import React, { useCallback, useEffect, useState } from "react"
@@ -34,7 +34,7 @@ import { useDuckFollowerVisibility } from "@/hooks/use-duck-follower-visibility"
 import { trackEvent } from "@/lib/events"
 import { copyToClipboardWithEvent } from "@/utils/copy"
 
-import { ComponentIcon, Icons } from "./icons"
+import { Icons } from "./icons"
 import { getKPMarkSVG, KrishPintoMark } from "./krishpinto-mark"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
@@ -60,51 +60,51 @@ const MENU_LINKS: CommandLinkItem[] = [
   },
 ]
 
-const PORTFOLIO_LINKS: CommandLinkItem[] = [
+/**
+ * The pages, and then the home page sections that are not already a page of
+ * their own. Experience and Projects used to appear in both halves, which put
+ * two identical rows in one list, and About pointed at a section that is
+ * currently hidden, so it scrolled nowhere.
+ */
+const PAGE_LINKS: CommandLinkItem[] = [
   {
     title: "Work",
     href: "/work",
     icon: <BriefcaseBusinessIcon />,
+    keywords: ["experience", "jobs", "career"],
   },
   {
     title: "Projects",
     href: "/projects",
     icon: <BoxIcon />,
+    keywords: ["case study", "work"],
   },
   {
     title: "Resume",
     href: "/resume",
     icon: <CircleCheckBigIcon />,
+    keywords: ["cv", "certificates"],
   },
-  {
-    title: "Experience",
-    href: "/#experience",
-    icon: <BriefcaseBusinessIcon />,
-  },
-  {
-    title: "Projects",
-    href: "/#projects",
-    icon: <BoxIcon />,
-  },
+]
+
+const SECTION_LINKS: CommandLinkItem[] = [
   {
     title: "Honors & Awards",
     href: "/#awards",
     icon: <AwardIcon />,
+    keywords: ["hackathon", "prize", "certificates"],
+  },
+  {
+    title: "Research Papers",
+    href: "/#papers",
+    icon: <ScrollTextIcon />,
+    keywords: ["publications", "ieee", "journal"],
   },
   {
     title: "Tech Stack",
     href: "/#stack",
     icon: <LayersIcon />,
-  },
-  {
-    title: "About",
-    href: "/#about",
-    icon: <TextInitialIcon />,
-  },
-  {
-    title: "Download vCard",
-    href: "/vcard",
-    icon: <FileTextIcon />,
+    keywords: ["tools", "technologies"],
   },
 ]
 
@@ -117,17 +117,17 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
 
 const OTHER_LINK_ITEMS: CommandLinkItem[] = [
   {
+    title: "Download vCard",
+    href: "/vcard",
+    icon: <FileTextIcon />,
+  },
+  {
     title: "llms.txt",
     href: "/llms.txt",
     icon: <FileTextIcon />,
     openInNewTab: true,
   },
 ]
-
-type BlockItem = {
-  name: string
-  description: string
-}
 
 export function CommandMenu({
   enabledHotkeys = false,
@@ -254,7 +254,13 @@ export function CommandMenu({
 
           <CommandLinkGroup
             heading="Portfolio"
-            links={PORTFOLIO_LINKS}
+            links={PAGE_LINKS}
+            onLinkSelect={handleOpenLink}
+          />
+
+          <CommandLinkGroup
+            heading="Sections"
+            links={SECTION_LINKS}
             onLinkSelect={handleOpenLink}
           />
 
